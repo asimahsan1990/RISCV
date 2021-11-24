@@ -1,0 +1,200 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/asim/Desktop/submissions/ahb_lite
+valu
+Z0 !s110 1637780854
+!i10b 1
+!s100 `GD<in=f@?4ASH9G@;YQ80
+I`CF[@=KKO;GYfDZ@n@Y6h0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 d/home/asim/Desktop/github_repo/RISCV
+w1637755631
+8/home/asim/Desktop/github_repo/RISCV/alu.v
+F/home/asim/Desktop/github_repo/RISCV/alu.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1637780854.000000
+!s107 /home/asim/Desktop/github_repo/RISCV/alu.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/asim/Desktop/github_repo/RISCV/alu.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vcontroller
+R0
+!i10b 1
+!s100 c>O=O41Re8bQm]n[0aa_>3
+IlDR>;Q9oHYD=M2FCCoRm^0
+R1
+R2
+w1637780470
+8/home/asim/Desktop/github_repo/RISCV/controller.v
+F/home/asim/Desktop/github_repo/RISCV/controller.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/asim/Desktop/github_repo/RISCV/controller.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/asim/Desktop/github_repo/RISCV/controller.v|
+!i113 1
+R5
+R6
+vmemory
+R0
+!i10b 1
+!s100 ClVXADfcZ8RT`AJ9Jh=Qa0
+IXnzF<dPz@MkDLJMU6iA;g3
+R1
+R2
+w1637739579
+8/home/asim/Desktop/github_repo/RISCV/memory.v
+F/home/asim/Desktop/github_repo/RISCV/memory.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/asim/Desktop/github_repo/RISCV/memory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/asim/Desktop/github_repo/RISCV/memory.v|
+!i113 1
+R5
+R6
+vmemory_byte
+R0
+!i10b 1
+!s100 7<DORk8l6Hz2>LLTaNRa40
+I<cb]8@he`PUXFeBzQ7U0U0
+R1
+R2
+w1637778672
+8/home/asim/Desktop/github_repo/RISCV/memory_byte.v
+F/home/asim/Desktop/github_repo/RISCV/memory_byte.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/asim/Desktop/github_repo/RISCV/memory_byte.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/asim/Desktop/github_repo/RISCV/memory_byte.v|
+!i113 1
+R5
+R6
+vmultiplexor
+R0
+!i10b 1
+!s100 ZPTY7>Gkk6:g4T@iUnOQX3
+I>NkS7_7QK6?d0zG[^m<T40
+R1
+R2
+w1637778189
+8/home/asim/Desktop/github_repo/RISCV/mux_2_1.v
+F/home/asim/Desktop/github_repo/RISCV/mux_2_1.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/asim/Desktop/github_repo/RISCV/mux_2_1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/asim/Desktop/github_repo/RISCV/mux_2_1.v|
+!i113 1
+R5
+R6
+vregister
+R0
+!i10b 1
+!s100 J`eW2l:BHZ>oDeF[NSM:c3
+IezckYYo=dj8;IaJ>AN=[?0
+R1
+R2
+w1637746895
+8/home/asim/Desktop/github_repo/RISCV/register.v
+F/home/asim/Desktop/github_repo/RISCV/register.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/asim/Desktop/github_repo/RISCV/register.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/asim/Desktop/github_repo/RISCV/register.v|
+!i113 1
+R5
+R6
+vregister_file
+Z7 !s110 1637780855
+!i10b 1
+!s100 ^dLG0527JALX:I>:jACPm3
+IO=>oUVT6Z_P52==F7mY;O1
+R1
+R2
+w1637757089
+8/home/asim/Desktop/github_repo/RISCV/register_file.v
+F/home/asim/Desktop/github_repo/RISCV/register_file.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1637780855.000000
+!s107 /home/asim/Desktop/github_repo/RISCV/register_file.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/asim/Desktop/github_repo/RISCV/register_file.v|
+!i113 1
+R5
+R6
+vtb_top_module
+R7
+!i10b 1
+!s100 dk[SDeS[GP]edTDaAVWk92
+IVQnZi@YZ755za591o]k<C3
+R1
+R2
+w1637779990
+8/home/asim/Desktop/github_repo/RISCV/tb_top_module.v
+F/home/asim/Desktop/github_repo/RISCV/tb_top_module.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/asim/Desktop/github_repo/RISCV/tb_top_module.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/asim/Desktop/github_repo/RISCV/tb_top_module.v|
+!i113 1
+R5
+R6
+vTop_module
+R0
+!i10b 1
+!s100 KenK3MdP2?79FC=eB@oZN3
+IRlhBl=hmF[dZK2M[i;OBJ1
+R1
+R2
+w1637780827
+8/home/asim/Desktop/github_repo/RISCV/Top_module.v
+F/home/asim/Desktop/github_repo/RISCV/Top_module.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/asim/Desktop/github_repo/RISCV/Top_module.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/asim/Desktop/github_repo/RISCV/Top_module.v|
+!i113 1
+R5
+R6
+n@top_module
