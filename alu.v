@@ -45,17 +45,17 @@ begin
 			alu_out=in_a>>in_b;
 		end
 	7:
-		begin
+		begin//sra
 			alu_out=in_a>>>in_b;
 
 		end
 	8:
-		begin
+		begin//or
 			alu_out=in_a|in_b;
 
 		end
 	9:
-		begin
+		begin//and
 			alu_out=in_a&in_b;
 
 		end
