@@ -24,7 +24,9 @@ module Top_module(input clk,
     wire RegWEn;
     wire BSel;
     wire[1:0] ImmSel;
-
+  
+  //data memory
+    wire [width-1:0] data_memory_out;
 
     multiplexor
   #(
@@ -70,6 +72,7 @@ module Top_module(input clk,
 
 wire[width-1:0] Oprand_A;
 wire[width-1:0] Oprand_B;
+wire[width-1:0] WB;
 
     register_file#(.DWIDTH(width))
       regfile(
@@ -78,7 +81,7 @@ wire[width-1:0] Oprand_B;
       .Addr_A(instr[19:15]) ,
       .Addr_B (instr[24:20]),
       .Addr_D (instr[11:7]),
-      .Data_D(ALU_Output),
+      .Data_D(WB),
       .Data_A(Oprand_A),
       .Data_B(Oprand_B)
       
@@ -115,16 +118,55 @@ wire[width-1:0] Source_B;
     .alu_out(ALU_Output)
     );
 
+    memory_byte#(.AWIDTH(10),.DWIDTH(8), .DPORT(32) )
+        data_memory(
+        .clk(clk)     ,
+        .wr(1'b0)      ,
+  			.byte(1'b0)       ,
+        .addr(ALU_Output)  ,
+        .data_in(32'b0),
+        .data_out(data_memory_out)		
+      );
+
+      wire[2:0] load_op;
+      wire [width:0] data_parsing_out;
+
+memory_load#(.WIDTH(width)) load_memory (
+    .data_in(data_memory_out),
+    .load_op(load_op),
+    .data_out(data_parsing_out)
+     
+    );
+
+
+   
+
+    multiplexor
+  #(
+    .WIDTH   ( width  ) 
+   )
+    reg_source_sel_mux
+   (
+    .sel     ( WBSel  ),
+    .in0     ( data_parsing_out ),
+    .in1     ( ALU_Output ),
+    .mux_out ( WB   ) 
+   ) ;
+
+   
 
 
 
     controller controller_inst(
     .instr(instr),
+
     .PCSel(PCSel),
     .RegWEn(RegWEn),
     .ImmSel(ImmSel),
     .BSel(BSel),
-    .ALUSel(ALUSel)
+    .WBSel(WBSel),
+    .ALUSel(ALUSel),
+    .load_op(load_op)
 
     );
     

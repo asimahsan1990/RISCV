@@ -12,12 +12,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	multiplexor
 
-} {} {}} /home/asim/Desktop/github_repo/RISCV/Imm_Gen.v {1 {vlog -work work -stats=none /home/asim/Desktop/github_repo/RISCV/Imm_Gen.v
+} {} {}} /home/asim/Desktop/github_repo/RISCV/Top_module.v {1 {vlog -work work -stats=none /home/asim/Desktop/github_repo/RISCV/Top_module.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module Imm_Gen
+-- Compiling module Top_module
 
 Top level modules:
-	Imm_Gen
+	Top_module
 
 } {} {}} /home/asim/Desktop/github_repo/RISCV/controller.v {1 {vlog -work work -stats=none /home/asim/Desktop/github_repo/RISCV/controller.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -26,12 +26,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	controller
 
-} {} {}} /home/asim/Desktop/github_repo/RISCV/Top_module.v {1 {vlog -work work -stats=none /home/asim/Desktop/github_repo/RISCV/Top_module.v
+} {} {}} /home/asim/Desktop/github_repo/RISCV/memory_load.v {1 {vlog -work work -stats=none /home/asim/Desktop/github_repo/RISCV/memory_load.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module Top_module
+-- Compiling module memory_load
 
 Top level modules:
-	Top_module
+	memory_load
+
+} {} {}} /home/asim/Desktop/github_repo/RISCV/Imm_Gen.v {1 {vlog -work work -stats=none /home/asim/Desktop/github_repo/RISCV/Imm_Gen.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Imm_Gen
+
+Top level modules:
+	Imm_Gen
 
 } {} {}} /home/asim/Desktop/github_repo/RISCV/memory_byte.v {1 {vlog -work work -stats=none /home/asim/Desktop/github_repo/RISCV/memory_byte.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -47,18 +54,18 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	register_file
 
-} {} {}} /home/asim/Desktop/github_repo/RISCV/register.v {1 {vlog -work work -stats=none /home/asim/Desktop/github_repo/RISCV/register.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module register
-
-Top level modules:
-	register
-
 } {} {}} /home/asim/Desktop/github_repo/RISCV/memory.v {1 {vlog -work work -stats=none /home/asim/Desktop/github_repo/RISCV/memory.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module memory
 
 Top level modules:
 	memory
+
+} {} {}} /home/asim/Desktop/github_repo/RISCV/register.v {1 {vlog -work work -stats=none /home/asim/Desktop/github_repo/RISCV/register.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module register
+
+Top level modules:
+	register
 
 } {} {}}

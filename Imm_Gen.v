@@ -11,6 +11,7 @@ always @(*) begin
     case(ImmSel)
         0:Imm=$signed(instr[31:20]);
         1:Imm=$unsigned(instr[31:20]);
+        2:Imm=$unsigned(instr[24:20]);
     endcase
 end
 
