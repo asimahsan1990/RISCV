@@ -46,7 +46,7 @@ begin
 		end
 	7:
 		begin//sra
-			alu_out=in_a>>>in_b;
+			alu_out=$signed($signed(in_a)>>>in_b);
 
 		end
 	8:
