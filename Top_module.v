@@ -118,13 +118,16 @@ wire[width-1:0] Source_B;
     .alu_out(ALU_Output)
     );
 
+    wire[1:0] write_op;
+    wire MemRW;
+
     memory_byte#(.AWIDTH(10),.DWIDTH(8), .DPORT(32) )
         data_memory(
         .clk(clk)     ,
-        .wr(1'b0)      ,
-  			.byte(1'b0)       ,
+        .wr(MemRW)      ,
+  			.byte(write_op)       ,
         .addr(ALU_Output)  ,
-        .data_in(32'b0),
+        .data_in(Oprand_B),
         .data_out(data_memory_out)		
       );
 
@@ -145,7 +148,7 @@ memory_load#(.WIDTH(width)) load_memory (
   #(
     .WIDTH   ( width  ) 
    )
-    reg_source_sel_mux
+    reg_file_source_sel_mux
    (
     .sel     ( WBSel  ),
     .in0     ( data_parsing_out ),
@@ -165,9 +168,10 @@ memory_load#(.WIDTH(width)) load_memory (
     .ImmSel(ImmSel),
     .BSel(BSel),
     .WBSel(WBSel),
+    .MemRW(MemRW),
     .ALUSel(ALUSel),
-    .load_op(load_op)
-
+    .load_op(load_op),
+    .write_op(write_op)
     );
     
   

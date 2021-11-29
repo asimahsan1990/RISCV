@@ -12,6 +12,7 @@ always @(*) begin
         0:Imm=$signed(instr[31:20]);
         1:Imm=$unsigned(instr[31:20]);
         2:Imm=$unsigned(instr[24:20]);
+        3:Imm=$unsigned({instr[31:25],instr[11:7]});
     endcase
 end
 

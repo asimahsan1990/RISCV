@@ -1,7 +1,7 @@
 module memory_byte#(parameter AWIDTH=32,DPORT=32,DWIDTH=8)(
   input               clk   ,
   input               wr    ,
-  input				  byte,
+  input	[1:0]			  byte,
   input  [AWIDTH-1:0] addr  ,
   input [DPORT-1:0] data_in,
   output [DPORT-1:0] data_out

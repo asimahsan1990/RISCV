@@ -5,9 +5,11 @@ module controller(
         output reg RegWEn,
         output reg BSel,
         output reg WBSel,
+        output reg MemRW,
         output reg [1:0] ImmSel,
         output reg [3:0] ALUSel,
-        output reg [2:0] load_op
+        output reg [2:0] load_op,
+        output reg [1:0] write_op
         );
 
 wire[6:0] opcode;
@@ -23,16 +25,16 @@ assign fuct7=instr[31:25];
 
 always @(*) begin
     case(opcode)
+        
         'h03://i type load 
             begin
                 WBSel=0;//memory source
                 RegWEn=1;
-                BSel=0;
+                BSel=1;
                 PCSel=0;
                 ImmSel=0;//imm gen
-
                 ALUSel=0;//alu (imm+RS1)
-
+                MemRW=0;
                 case(fuct3)
                     0:load_op=0;
                     1:load_op=1;
@@ -52,6 +54,7 @@ always @(*) begin
                 RegWEn=1;
                 PCSel=0;
                 ImmSel=0;
+                MemRW=0;
 
                 case(fuct3)
                 0:ALUSel=0;
@@ -64,6 +67,26 @@ always @(*) begin
                 7:ALUSel=9;
                 endcase    
             end
+        
+        'h23://save SB
+            begin
+
+
+                RegWEn=0;
+                BSel=1;
+                PCSel=0;
+                ImmSel=3;//imm gen
+                ALUSel=1;//alu (imm+RS1)
+                MemRW=1;
+
+                case(fuct3)
+                0:write_op=0;
+                1:write_op=1;
+                2:write_op=2;
+                default:write_op=2;
+                endcase
+
+            end
 
         'h33://rtype aritmatic
             begin
@@ -71,6 +94,7 @@ always @(*) begin
                 BSel=0;
                 RegWEn=1;
                 PCSel=0;
+                MemRW=0;
 
                 case(fuct3)
                 0:ALUSel=fuct7[5]?1:0;

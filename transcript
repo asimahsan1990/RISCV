@@ -1,0 +1,210 @@
+# Loading project RISCV_SINGLE_CYCLE
+# Compile of memory.v was successful.
+# Compile of alu.v was successful.
+# Compile of controller.v failed with 3 errors.
+# Compile of memory_byte.v was successful.
+# Compile of mux_2_1.v was successful.
+# Compile of register.v was successful.
+# Compile of Top_module.v failed with 1 errors.
+# Compile of tb_top_module.v was successful.
+# Compile of register_file.v was successful.
+# Compile of Imm_Gen.v failed with 1 errors.
+# Compile of memory_load.v was successful.
+# 11 compiles, 3 failed with 5 errors.
+# Compile of Imm_Gen.v was successful.
+# Compile of controller.v failed with 1 errors.
+# Compile of controller.v was successful.
+# Compile of Top_module.v failed with 1 errors.
+# Compile of Top_module.v was successful.
+# Compile of memory.v was successful.
+# Compile of alu.v was successful.
+# Compile of controller.v was successful.
+# Compile of memory_byte.v was successful.
+# Compile of mux_2_1.v was successful.
+# Compile of register.v was successful.
+# Compile of Top_module.v was successful.
+# Compile of tb_top_module.v was successful.
+# Compile of register_file.v was successful.
+# Compile of Imm_Gen.v was successful.
+# Compile of memory_load.v was successful.
+# 11 compiles, 0 failed with no errors.
+# Compile of memory.v was successful.
+# Compile of alu.v was successful.
+# Compile of controller.v was successful.
+# Compile of memory_byte.v was successful.
+# Compile of mux_2_1.v was successful.
+# Compile of register.v was successful.
+# Compile of Top_module.v was successful.
+# Compile of tb_top_module.v was successful.
+# Compile of register_file.v was successful.
+# Compile of Imm_Gen.v was successful.
+# Compile of memory_load.v was successful.
+# 11 compiles, 0 failed with no errors.
+vsim work.tb_top_module
+# vsim work.tb_top_module 
+# Start time: 08:49:19 on Nov 29,2021
+# Loading work.tb_top_module
+# Loading work.Top_module
+# Loading work.multiplexor
+# Loading work.register
+# Loading work.memory_byte
+# Loading work.register_file
+# Loading work.Imm_Gen
+# Loading work.alu
+# Loading work.memory_load
+# Loading work.controller
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(63): [PCDPC] - Port size (2) does not match connection size (1) for port 'byte'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/instruction_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(63): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/instruction_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3017) /home/asim/Desktop/github_repo/RISCV/Top_module.v(114): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/alu_instance File: /home/asim/Desktop/github_repo/RISCV/alu.v
+# ** Warning: (vsim-3722) /home/asim/Desktop/github_repo/RISCV/Top_module.v(114): [TFMPC] - Missing connection for port 'a_is_zero'.
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(125): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/data_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(137): [PCDPC] - Port size (32) does not match connection size (33) for port 'data_out'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_load.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/load_memory File: /home/asim/Desktop/github_repo/RISCV/memory_load.v
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(151): [PCDPC] - Port size (32) does not match connection size (33) for port 'in0'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/mux_2_1.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/reg_file_source_sel_mux File: /home/asim/Desktop/github_repo/RISCV/mux_2_1.v
+add wave -position insertpoint  \
+sim:/tb_top_module/instance1/instruction_memory/data_out
+add wave -position insertpoint  \
+sim:/tb_top_module/instance1/alu_instance/alu_out
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ALU case not defined
+run
+add wave -position insertpoint  \
+sim:/tb_top_module/instance1/regfile/Data_B
+restart -f
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(63): [PCDPC] - Port size (2) does not match connection size (1) for port 'byte'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/instruction_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(63): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/instruction_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3017) /home/asim/Desktop/github_repo/RISCV/Top_module.v(114): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/alu_instance File: /home/asim/Desktop/github_repo/RISCV/alu.v
+# ** Warning: (vsim-3722) /home/asim/Desktop/github_repo/RISCV/Top_module.v(114): [TFMPC] - Missing connection for port 'a_is_zero'.
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(125): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/data_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(137): [PCDPC] - Port size (32) does not match connection size (33) for port 'data_out'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_load.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/load_memory File: /home/asim/Desktop/github_repo/RISCV/memory_load.v
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(151): [PCDPC] - Port size (32) does not match connection size (33) for port 'in0'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/mux_2_1.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/reg_file_source_sel_mux File: /home/asim/Desktop/github_repo/RISCV/mux_2_1.v
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ALU case not defined
+run
+add wave -position insertpoint  \
+sim:/tb_top_module/instance1/data_memory/data_in
+add wave -position insertpoint  \
+sim:/tb_top_module/instance1/data_memory/wr
+restart -f
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(63): [PCDPC] - Port size (2) does not match connection size (1) for port 'byte'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/instruction_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(63): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/instruction_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3017) /home/asim/Desktop/github_repo/RISCV/Top_module.v(114): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/alu_instance File: /home/asim/Desktop/github_repo/RISCV/alu.v
+# ** Warning: (vsim-3722) /home/asim/Desktop/github_repo/RISCV/Top_module.v(114): [TFMPC] - Missing connection for port 'a_is_zero'.
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(125): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/data_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(137): [PCDPC] - Port size (32) does not match connection size (33) for port 'data_out'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_load.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/load_memory File: /home/asim/Desktop/github_repo/RISCV/memory_load.v
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(151): [PCDPC] - Port size (32) does not match connection size (33) for port 'in0'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/mux_2_1.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/reg_file_source_sel_mux File: /home/asim/Desktop/github_repo/RISCV/mux_2_1.v
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ALU case not defined
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/tb_top_module/instance1/data_memory/byte
+restart -f
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(63): [PCDPC] - Port size (2) does not match connection size (1) for port 'byte'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/instruction_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(63): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/instruction_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3017) /home/asim/Desktop/github_repo/RISCV/Top_module.v(114): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/alu_instance File: /home/asim/Desktop/github_repo/RISCV/alu.v
+# ** Warning: (vsim-3722) /home/asim/Desktop/github_repo/RISCV/Top_module.v(114): [TFMPC] - Missing connection for port 'a_is_zero'.
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(125): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/data_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(137): [PCDPC] - Port size (32) does not match connection size (33) for port 'data_out'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_load.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/load_memory File: /home/asim/Desktop/github_repo/RISCV/memory_load.v
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(151): [PCDPC] - Port size (32) does not match connection size (33) for port 'in0'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/mux_2_1.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/reg_file_source_sel_mux File: /home/asim/Desktop/github_repo/RISCV/mux_2_1.v
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ALU case not defined
+run
+run
+run
+run
+run
+run
+run
+restart -f
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(63): [PCDPC] - Port size (2) does not match connection size (1) for port 'byte'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/instruction_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(63): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/instruction_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3017) /home/asim/Desktop/github_repo/RISCV/Top_module.v(114): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/alu_instance File: /home/asim/Desktop/github_repo/RISCV/alu.v
+# ** Warning: (vsim-3722) /home/asim/Desktop/github_repo/RISCV/Top_module.v(114): [TFMPC] - Missing connection for port 'a_is_zero'.
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(125): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/data_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(137): [PCDPC] - Port size (32) does not match connection size (33) for port 'data_out'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_load.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/load_memory File: /home/asim/Desktop/github_repo/RISCV/memory_load.v
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(151): [PCDPC] - Port size (32) does not match connection size (33) for port 'in0'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/mux_2_1.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/reg_file_source_sel_mux File: /home/asim/Desktop/github_repo/RISCV/mux_2_1.v
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ALU case not defined
+run
+run
+run
+run
+run
+run
+run
