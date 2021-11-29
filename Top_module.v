@@ -23,7 +23,8 @@ module Top_module(input clk,
     wire PCSel;
     wire RegWEn;
     wire BSel;
-    wire[1:0] ImmSel;
+    wire[1:0] WBSel;
+    wire[2:0] ImmSel;
   
   //data memory
     wire [width-1:0] data_memory_out;
@@ -63,7 +64,7 @@ module Top_module(input clk,
         instruction_memory(
         .clk(clk)     ,
         .wr(1'b0)      ,
-  			.byte(1'b0)       ,
+  			.byte(2'b0)       ,
         .addr(pc_out)  ,
         .data_in(32'b0),
         .data_out(instr)		
@@ -94,6 +95,32 @@ wire[width-1:0] WB;
 
     );
 
+wire BrUn,BrEq,BrLT;
+
+branch_compare #(
+    .WIDTH(width)
+) branch_comparator (
+        .rs1(Oprand_A),
+        .rs2(Oprand_B),
+        .BrUn(BrUn),
+        .BrEq(BrEq),
+        .BrLT(BrLT));
+
+wire[width-1:0] Source_A;
+wire ASel;
+
+    multiplexor
+  #(
+    .WIDTH   ( width  ) 
+   )
+    source_a_sel_mux
+   (
+    .sel     ( ASel   ),
+    .in0     ( Oprand_A ),
+    .in1     ( pc_out ),
+    .mux_out ( Source_A   ) 
+   ) ;
+
 wire[width-1:0] Source_B;
 
     multiplexor
@@ -113,7 +140,7 @@ wire[width-1:0] Source_B;
     alu#(.WIDTH(width))
     alu_instance(
     .ALUSel(ALUSel) ,
-    .in_a(Oprand_A)   ,
+    .in_a(Source_A)   ,
     .in_b(Source_B)   ,
     .alu_out(ALU_Output)
     );
@@ -132,7 +159,7 @@ wire[width-1:0] Source_B;
       );
 
       wire[2:0] load_op;
-      wire [width:0] data_parsing_out;
+      wire [width-1:0] data_parsing_out;
 
 memory_load#(.WIDTH(width)) load_memory (
     .data_in(data_memory_out),
@@ -144,7 +171,7 @@ memory_load#(.WIDTH(width)) load_memory (
 
    
 
-    multiplexor
+    multiplexor_4
   #(
     .WIDTH   ( width  ) 
    )
@@ -153,6 +180,8 @@ memory_load#(.WIDTH(width)) load_memory (
     .sel     ( WBSel  ),
     .in0     ( data_parsing_out ),
     .in1     ( ALU_Output ),
+    .in2     ( pc_4 ),
+    .in3     ( ALU_Output ),//NC // output
     .mux_out ( WB   ) 
    ) ;
 
@@ -162,6 +191,8 @@ memory_load#(.WIDTH(width)) load_memory (
 
     controller controller_inst(
     .instr(instr),
+    .BrEq(BrEq),
+    .BrLT(BrLT),
 
     .PCSel(PCSel),
     .RegWEn(RegWEn),
@@ -169,6 +200,8 @@ memory_load#(.WIDTH(width)) load_memory (
     .BSel(BSel),
     .WBSel(WBSel),
     .MemRW(MemRW),
+    .BrUn(BrUn),
+    .ASel(ASel),
     .ALUSel(ALUSel),
     .load_op(load_op),
     .write_op(write_op)

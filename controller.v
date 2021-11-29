@@ -1,12 +1,16 @@
 module controller(
         input[31:0] instr,
+        input BrEq,
+        input BrLT,
 
         output reg PCSel,
         output reg RegWEn,
         output reg BSel,
-        output reg WBSel,
+        output reg[1:0] WBSel,
         output reg MemRW,
-        output reg [1:0] ImmSel,
+        output reg ASel,
+        output reg BrUn,
+        output reg [2:0] ImmSel,
         output reg [3:0] ALUSel,
         output reg [2:0] load_op,
         output reg [1:0] write_op
@@ -35,6 +39,8 @@ always @(*) begin
                 ImmSel=0;//imm gen
                 ALUSel=0;//alu (imm+RS1)
                 MemRW=0;
+                ASel=0;
+
                 case(fuct3)
                     0:load_op=0;
                     1:load_op=1;
@@ -55,6 +61,7 @@ always @(*) begin
                 PCSel=0;
                 ImmSel=0;
                 MemRW=0;
+                ASel=0;
 
                 case(fuct3)
                 0:ALUSel=0;
@@ -67,17 +74,28 @@ always @(*) begin
                 7:ALUSel=9;
                 endcase    
             end
+        'h17:
+            begin
+                WBSel=1;//alu out
+                BSel=1;
+                RegWEn=1;
+                PCSel=0;
+                ALUSel=0;//alu (imm+pc)
+                ImmSel=6;
+                MemRW=0;
+                ASel=1;
+                $display("@%d,AUIPC",$time);
+            end
         
         'h23://save SB
             begin
-
-
                 RegWEn=0;
                 BSel=1;
                 PCSel=0;
                 ImmSel=3;//imm gen
-                ALUSel=1;//alu (imm+RS1)
+                ALUSel=0;//alu (imm+RS1)
                 MemRW=1;
+                ASel=0;
 
                 case(fuct3)
                 0:write_op=0;
@@ -87,6 +105,19 @@ always @(*) begin
                 endcase
 
             end
+        'h37:
+            begin
+                WBSel=1;//alu out
+                BSel=1;
+                RegWEn=1;
+                PCSel=0;
+                ALUSel=10;//alu (imm)
+                ImmSel=6;
+                MemRW=0;
+                ASel=1;
+                $display("@%d,LUI",$time);
+                
+            end
 
         'h33://rtype aritmatic
             begin
@@ -95,6 +126,7 @@ always @(*) begin
                 RegWEn=1;
                 PCSel=0;
                 MemRW=0;
+                ASel=0;
 
                 case(fuct3)
                 0:ALUSel=fuct7[5]?1:0;
@@ -106,6 +138,53 @@ always @(*) begin
                 6:ALUSel=8;
                 7:ALUSel=9;
                 endcase
+            end
+
+
+        'h63:
+            begin
+                RegWEn=0;
+                BSel=1;
+                PCSel=1;
+                ImmSel=4;//imm gen
+                ALUSel=1;//alu (PC+ imm)
+                MemRW=0;
+                ASel=1;
+                BrUn=0;
+                case (fuct3)
+                    0: PCSel=BrEq?1:0;
+                    1: PCSel=!BrEq?1:0;
+                    4: PCSel=BrLT?1:0;
+                    5: PCSel=!BrLT?1:0;
+                    6: begin BrUn=1; PCSel=BrLT?1:0; end
+                    7: begin BrUn=1; PCSel=!BrLT?1:0; end
+                endcase
+                
+            end
+        
+        'h67:
+            begin
+                WBSel=2;//pc + 4
+                BSel=1;
+                RegWEn=1;
+                PCSel=1;
+                ALUSel=0;//alu (RS1+ imm)
+                ImmSel=0;
+                MemRW=0;
+                ASel=0;
+                $display("Jalr");
+            end
+        'h6F:
+            begin
+                WBSel=2;//pc + 4
+                BSel=1;
+                RegWEn=1;
+                PCSel=1;
+                ALUSel=0;//alu (RS1+ imm)
+                ImmSel=5;
+                MemRW=0;
+                ASel=1;
+                $display("@%d Jal",$time);
             end
 
             default: $display("Unkonwn Instruction");

@@ -13,6 +13,7 @@ begin
 	0:
 		begin//add
 			alu_out=in_a+in_b;
+			$display("@%d add,%h,%h",$time,in_a,in_b);
 		end
 	1:
 		begin//sub
@@ -59,8 +60,12 @@ begin
 			alu_out=in_a&in_b;
 
 		end
+	10:
+		begin
+			alu_out=in_b;
+		end	
 	default:
-			$display("ALU case not defined");
+			$display("@%d ALU case not defined",$time);
 	endcase
 end
 	
