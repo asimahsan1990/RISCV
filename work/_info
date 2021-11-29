@@ -9,7 +9,7 @@ z2
 cModel Technology
 d/home/asim/Desktop/submissions/ahb_lite
 valu
-Z0 !s110 1638181392
+Z0 !s110 1638190830
 !i10b 1
 !s100 TEd`fiDaIQ5<fQEhnBlb02
 IFg22W:WO:4m42`H]@FO5=3
@@ -23,14 +23,14 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1638181392.000000
+Z4 !s108 1638190830.000000
 !s107 /home/asim/Desktop/github_repo/RISCV/alu.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/asim/Desktop/github_repo/RISCV/alu.v|
 !i113 1
 Z5 o-work work
 Z6 tCvgOpt 0
 vbranch_compare
-Z7 !s110 1638181393
+Z7 !s110 1638190831
 !i10b 1
 !s100 ]c_DHQK3JEYehzQ`E>kQR3
 IbPHlfAbJ83T;GoM<V5G^:3
@@ -44,7 +44,7 @@ R3
 r1
 !s85 0
 31
-Z8 !s108 1638181393.000000
+Z8 !s108 1638190831.000000
 !s107 /home/asim/Desktop/github_repo/RISCV/branch_comparator.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/asim/Desktop/github_repo/RISCV/branch_comparator.v|
 !i113 1
@@ -53,11 +53,11 @@ R6
 vcontroller
 R0
 !i10b 1
-!s100 J;nO2JHnmT^;VN2U`:=1f1
-IM8F4KEC@3[>86L;lOZJn50
+!s100 C6z1aUHJVFDJ>VDX3`]A[3
+I6;XeZO;o9lJ?>5Tc?9cWS1
 R1
 R2
-w1638181388
+w1638187681
 8/home/asim/Desktop/github_repo/RISCV/controller.v
 F/home/asim/Desktop/github_repo/RISCV/controller.v
 L0 1
@@ -179,7 +179,7 @@ R8
 R5
 R6
 vmultiplexor
-R0
+R7
 !i10b 1
 !s100 ZPTY7>Gkk6:g4T@iUnOQX3
 I>NkS7_7QK6?d0zG[^m<T40
@@ -235,7 +235,7 @@ R3
 r1
 !s85 0
 31
-R4
+R8
 !s107 /home/asim/Desktop/github_repo/RISCV/register.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/asim/Desktop/github_repo/RISCV/register.v|
 !i113 1

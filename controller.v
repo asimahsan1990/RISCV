@@ -147,7 +147,7 @@ always @(*) begin
                 BSel=1;
                 PCSel=1;
                 ImmSel=4;//imm gen
-                ALUSel=1;//alu (PC+ imm)
+                ALUSel=0;//alu (PC+ imm)
                 MemRW=0;
                 ASel=1;
                 BrUn=0;

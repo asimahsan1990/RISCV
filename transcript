@@ -1613,3 +1613,2359 @@ run
 # @                  25 add,0000000c,00123000
 # @                  25 add,00000004,01020000
 # @                  25 add,00000004,00000010
+# Compile of memory.v was successful.
+# Compile of alu.v was successful.
+# Compile of controller.v was successful.
+# Compile of memory_byte.v was successful.
+# Compile of mux_2_1.v was successful.
+# Compile of register.v was successful.
+# Compile of Top_module.v was successful.
+# Compile of tb_top_module.v was successful.
+# Compile of register_file.v was successful.
+# Compile of Imm_Gen.v was successful.
+# Compile of memory_load.v was successful.
+# Compile of branch_comparator.v was successful.
+# Compile of mux_4_1.v was successful.
+# 13 compiles, 0 failed with no errors.
+restart -f
+# Loading work.tb_top_module
+# Loading work.Top_module
+# Loading work.multiplexor
+# Loading work.register
+# Loading work.memory_byte
+# Loading work.register_file
+# Loading work.Imm_Gen
+# Loading work.branch_compare
+# Loading work.alu
+# Loading work.memory_load
+# Loading work.multiplexor_4
+# Loading work.controller
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(64): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/instruction_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3017) /home/asim/Desktop/github_repo/RISCV/Top_module.v(141): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/alu_instance File: /home/asim/Desktop/github_repo/RISCV/alu.v
+# ** Warning: (vsim-3722) /home/asim/Desktop/github_repo/RISCV/Top_module.v(141): [TFMPC] - Missing connection for port 'a_is_zero'.
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(152): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/data_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+add wave -position insertpoint  \
+sim:/tb_top_module/instance1/program_counter_register/data_out
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-PLI-3410) Illegal character '\' in data on line 1 of file "instruction.hex".    : /home/asim/Desktop/github_repo/RISCV/tb_top_module.v(24)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module
+# @                   0 ALU case not defined
+# @                   0 add,00000000,xxxxxxx1
+# @                   5 add,xxxxxxxx,xxxxxxx1
+# Unkonwn Instruction
+# @                   5 add,xxxxxxxx,xxxxxxxx
+run
+run
+# Compile of memory.v was successful.
+# Compile of alu.v was successful.
+# Compile of controller.v was successful.
+# Compile of memory_byte.v was successful.
+# Compile of mux_2_1.v was successful.
+# Compile of register.v was successful.
+# Compile of Top_module.v was successful.
+# Compile of tb_top_module.v was successful.
+# Compile of register_file.v was successful.
+# Compile of Imm_Gen.v was successful.
+# Compile of memory_load.v was successful.
+# Compile of branch_comparator.v was successful.
+# Compile of mux_4_1.v was successful.
+# 13 compiles, 0 failed with no errors.
+restart -f
+# Loading work.tb_top_module
+# Loading work.Top_module
+# Loading work.multiplexor
+# Loading work.register
+# Loading work.memory_byte
+# Loading work.register_file
+# Loading work.Imm_Gen
+# Loading work.branch_compare
+# Loading work.alu
+# Loading work.memory_load
+# Loading work.multiplexor_4
+# Loading work.controller
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(64): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/instruction_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3017) /home/asim/Desktop/github_repo/RISCV/Top_module.v(141): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/alu_instance File: /home/asim/Desktop/github_repo/RISCV/alu.v
+# ** Warning: (vsim-3722) /home/asim/Desktop/github_repo/RISCV/Top_module.v(141): [TFMPC] - Missing connection for port 'a_is_zero'.
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(152): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/data_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# @                   0 ALU case not defined
+# @                   0 add,00000000,00000001
+# @                   5 add,00000000,00000002
+run
+run
+# @                  15 add,00000000,00000003
+run
+run
+# @                  25 add,00000000,00000004
+run
+run
+# @                  35 add,00000000,00000005
+run
+run
+# @                  45 add,00000000,00000006
+run
+run
+# @                  55 add,00000000,00000007
+run
+run
+# @                  65 add,00000000,00000008
+run
+run
+# @                  75 add,00000000,00000009
+run
+run
+# @                  85 add,00000002,00000009
+# @                  85 add,00000002,00000003
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Unkonwn Instruction
+# Unkonwn Instruction
+# Compile of memory.v was successful.
+# Compile of alu.v was successful.
+# Compile of controller.v was successful.
+# Compile of memory_byte.v was successful.
+# Compile of mux_2_1.v was successful.
+# Compile of register.v was successful.
+# Compile of Top_module.v was successful.
+# Compile of tb_top_module.v was successful.
+# Compile of register_file.v was successful.
+# Compile of Imm_Gen.v was successful.
+# Compile of memory_load.v was successful.
+# Compile of branch_comparator.v was successful.
+# Compile of mux_4_1.v was successful.
+# 13 compiles, 0 failed with no errors.
+# Compile of memory.v was successful.
+# Compile of alu.v was successful.
+# Compile of controller.v was successful.
+# Compile of memory_byte.v was successful.
+# Compile of mux_2_1.v was successful.
+# Compile of register.v was successful.
+# Compile of Top_module.v was successful.
+# Compile of tb_top_module.v was successful.
+# Compile of register_file.v was successful.
+# Compile of Imm_Gen.v was successful.
+# Compile of memory_load.v was successful.
+# Compile of branch_comparator.v was successful.
+# Compile of mux_4_1.v was successful.
+# 13 compiles, 0 failed with no errors.
+restart -f
+# Loading work.tb_top_module
+# Loading work.Top_module
+# Loading work.multiplexor
+# Loading work.register
+# Loading work.memory_byte
+# Loading work.register_file
+# Loading work.Imm_Gen
+# Loading work.branch_compare
+# Loading work.alu
+# Loading work.memory_load
+# Loading work.multiplexor_4
+# Loading work.controller
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(64): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/instruction_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3017) /home/asim/Desktop/github_repo/RISCV/Top_module.v(141): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/alu_instance File: /home/asim/Desktop/github_repo/RISCV/alu.v
+# ** Warning: (vsim-3722) /home/asim/Desktop/github_repo/RISCV/Top_module.v(141): [TFMPC] - Missing connection for port 'a_is_zero'.
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(152): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/data_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# @                   0 ALU case not defined
+# @                   0 add,00000000,00000001
+# @                   5 add,00000000,00000002
+# @                  15 add,00000000,00000003
+# @                  25 add,00000000,00000004
+# @                  35 add,00000000,00000005
+# @                  45 add,00000000,00000006
+# @                  55 add,00000000,00000007
+# @                  65 add,00000000,00000008
+# @                  75 add,00000000,00000009
+# @                  85 add,00000002,00000009
+# @                  85 add,00000002,00000003
+run
+# @                 265 add,0000006c,00000061
+# @                 265 add,0000006c,00000070
+# Unkonwn Instruction
+# @                 275 add,000000dc,00000070
+# @                 275 add,000000dc,xxxxxxxX
+# Unkonwn Instruction
+# @                 285 add,xxxxxxxx,xxxxxxxX
+restart -f
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(64): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/instruction_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3017) /home/asim/Desktop/github_repo/RISCV/Top_module.v(141): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/alu_instance File: /home/asim/Desktop/github_repo/RISCV/alu.v
+# ** Warning: (vsim-3722) /home/asim/Desktop/github_repo/RISCV/Top_module.v(141): [TFMPC] - Missing connection for port 'a_is_zero'.
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(152): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/data_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# @                   0 ALU case not defined
+# @                   0 add,00000000,00000001
+# @                   5 add,00000000,00000002
+# @                  15 add,00000000,00000003
+# @                  25 add,00000000,00000004
+# @                  35 add,00000000,00000005
+# @                  45 add,00000000,00000006
+# @                  55 add,00000000,00000007
+# @                  65 add,00000000,00000008
+# @                  75 add,00000000,00000009
+# @                  85 add,00000002,00000009
+# @                  85 add,00000002,00000003
+run
+# @                 265 add,0000006c,00000061
+# @                 265 add,0000006c,00000070
+run
+run
+# Unkonwn Instruction
+# @                 275 add,000000dc,00000070
+# @                 275 add,000000dc,xxxxxxxX
+# Unkonwn Instruction
+run
+# Compile of memory.v was successful.
+# Compile of alu.v was successful.
+# Compile of controller.v was successful.
+# Compile of memory_byte.v was successful.
+# Compile of mux_2_1.v was successful.
+# Compile of register.v was successful.
+# Compile of Top_module.v was successful.
+# Compile of tb_top_module.v was successful.
+# Compile of register_file.v was successful.
+# Compile of Imm_Gen.v was successful.
+# Compile of memory_load.v was successful.
+# Compile of branch_comparator.v was successful.
+# Compile of mux_4_1.v was successful.
+# 13 compiles, 0 failed with no errors.
+restart -f
+# Loading work.tb_top_module
+# Loading work.Top_module
+# Loading work.multiplexor
+# Loading work.register
+# Loading work.memory_byte
+# Loading work.register_file
+# Loading work.Imm_Gen
+# Loading work.branch_compare
+# Loading work.alu
+# Loading work.memory_load
+# Loading work.multiplexor_4
+# Loading work.controller
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(64): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/instruction_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3017) /home/asim/Desktop/github_repo/RISCV/Top_module.v(141): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/alu_instance File: /home/asim/Desktop/github_repo/RISCV/alu.v
+# ** Warning: (vsim-3722) /home/asim/Desktop/github_repo/RISCV/Top_module.v(141): [TFMPC] - Missing connection for port 'a_is_zero'.
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(152): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/data_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# @                   0 ALU case not defined
+# @                   0 add,00000000,00000001
+# @                   5 add,00000000,00000002
+# @                  15 add,00000000,00000003
+# @                  25 add,00000000,00000004
+# @                  35 add,00000000,00000005
+# @                  45 add,00000000,00000006
+# @                  55 add,00000000,00000007
+# @                  65 add,00000000,00000008
+# @                  75 add,00000000,00000009
+# @                  85 add,00000002,00000009
+# @                  85 add,00000002,00000003
+# @                 265 add,0000006c,00000001
+# @                 265 add,0000006c,0000000c
+run
+run
+run
+# @                 275 add,00000078,0000000c
+# @                 275 add,00000078,00000004
+run
+run
+# @                 285 add,0000007c,00000004
+run
+run
+# @                 295 add,00000080,00000004
+run
+run
+# @                 305 add,00000084,00000004
+run
+run
+# @                 315 add,00000088,00000004
+run
+run
+# @                 325 add,0000008c,00000004
+# @                 325 add,00000000,00000814
+# @                 325 add,00000000,00000000
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# @                 375 add,00000000,00000001
+# @                 375 add,00000000,00000000
+run
+run
+# @                 385 add,00000000,00000004
+run
+run
+# @                 395 add,00000000,00000008
+run
+run
+# @                 405 add,xxxxxxxx,00000008
+# Unkonwn Instruction
+# @                 405 add,xxxxxxxx,00000xxx
+# Unkonwn Instruction
+run
+# Compile of memory.v was successful.
+# Compile of alu.v was successful.
+# Compile of controller.v was successful.
+# Compile of memory_byte.v was successful.
+# Compile of mux_2_1.v was successful.
+# Compile of register.v was successful.
+# Compile of Top_module.v was successful.
+# Compile of tb_top_module.v was successful.
+# Compile of register_file.v was successful.
+# Compile of Imm_Gen.v was successful.
+# Compile of memory_load.v was successful.
+# Compile of branch_comparator.v was successful.
+# Compile of mux_4_1.v was successful.
+# 13 compiles, 0 failed with no errors.
+restart -f
+# Loading work.tb_top_module
+# Loading work.Top_module
+# Loading work.multiplexor
+# Loading work.register
+# Loading work.memory_byte
+# Loading work.register_file
+# Loading work.Imm_Gen
+# Loading work.branch_compare
+# Loading work.alu
+# Loading work.memory_load
+# Loading work.multiplexor_4
+# Loading work.controller
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(64): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/instruction_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3017) /home/asim/Desktop/github_repo/RISCV/Top_module.v(141): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/alu_instance File: /home/asim/Desktop/github_repo/RISCV/alu.v
+# ** Warning: (vsim-3722) /home/asim/Desktop/github_repo/RISCV/Top_module.v(141): [TFMPC] - Missing connection for port 'a_is_zero'.
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(152): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/data_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+restart -f
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(64): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/instruction_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3017) /home/asim/Desktop/github_repo/RISCV/Top_module.v(141): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/alu_instance File: /home/asim/Desktop/github_repo/RISCV/alu.v
+# ** Warning: (vsim-3722) /home/asim/Desktop/github_repo/RISCV/Top_module.v(141): [TFMPC] - Missing connection for port 'a_is_zero'.
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(152): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/data_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# @                   0 ALU case not defined
+# @                   0 add,00000000,00000001
+# @                   5 add,00000000,00000002
+run
+run
+# @                  15 add,00000000,00000003
+run
+run
+# @                  25 add,00000000,00000004
+run
+run
+# @                  35 add,00000000,00000005
+run
+run
+# @                  45 add,00000000,00000006
+run
+run
+# @                  55 add,00000000,00000007
+run
+run
+# @                  65 add,00000000,00000008
+run
+run
+# @                  75 add,00000000,00000009
+run
+run
+# @                  85 add,00000002,00000009
+# @                  85 add,00000002,00000003
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# @                 265 add,0000006c,00000001
+# @                 265 add,0000006c,0000000c
+run
+run
+# @                 275 add,00000078,0000000c
+# @                 275 add,00000078,00000004
+run
+run
+# @                 285 add,0000007c,00000004
+run
+run
+# @                 295 add,00000080,00000004
+run
+run
+# @                 305 add,00000084,00000004
+run
+run
+# @                 315 add,00000088,00000004
+run
+run
+# @                 325 add,0000008c,00000004
+# @                 325 add,00000000,00000814
+# @                 325 add,00000000,00000000
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# @                 375 add,00000000,00000001
+# @                 375 add,00000000,00000000
+run
+run
+# @                 385 add,00000000,00000004
+run
+run
+# @                 395 add,00000000,00000008
+run
+run
+# @                 405 add,00000004,00000008
+# @                 405,LUI
+# @                 405,LUI
+run
+run
+# @                 415,AUIPC
+# @                 415,AUIPC
+# @                 415 add,000000b0,00123000
+run
+run
+# @                 425 add,000000b4,00123000
+# @                 425 add,00000000,00000000
+run
+run
+run
+run
+# @                 445 add,00000000,xxxxxxxx
+# @                 445 add,00000000,0000000a
+run
+run
+# @                 455 add,0000000a,0000000a
+# @                 455 add,0000000a,00000000
+run
+run
+# @                 465 add,0000000a,xxxxxxxx
+# @                 465 add,0000000a,ffffffff
+run
+run
+# @                 475 add,00000000,ffffffff
+# @                 475 add,000000c8,ffffffe0
+# @                 475 add,000000c8,fffffff4
+run
+run
+# @                 485 add,000000cc,fffffff4
+# @                 485 add,00000000,00000000
+run
+run
+run
+run
+run
+run
+# @                 515 add,xxxxxxxx,00000000
+# Unkonwn Instruction
+# @                 515 add,xxxxxxxx,xxxxxxxx
+# Unkonwn Instruction
+run
+run
+restart -f
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(64): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/instruction_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3017) /home/asim/Desktop/github_repo/RISCV/Top_module.v(141): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/alu_instance File: /home/asim/Desktop/github_repo/RISCV/alu.v
+# ** Warning: (vsim-3722) /home/asim/Desktop/github_repo/RISCV/Top_module.v(141): [TFMPC] - Missing connection for port 'a_is_zero'.
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(152): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/data_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# @                   0 ALU case not defined
+# @                   0 add,00000000,00000001
+# @                   5 add,00000000,00000002
+# @                  15 add,00000000,00000003
+# @                  25 add,00000000,00000004
+# @                  35 add,00000000,00000005
+# @                  45 add,00000000,00000006
+# @                  55 add,00000000,00000007
+# @                  65 add,00000000,00000008
+# @                  75 add,00000000,00000009
+# @                  85 add,00000002,00000009
+# @                  85 add,00000002,00000003
+# @                 265 add,0000006c,00000001
+# @                 265 add,0000006c,0000000c
+# @                 275 add,00000078,0000000c
+# @                 275 add,00000078,00000004
+# @                 285 add,0000007c,00000004
+# @                 295 add,00000080,00000004
+# @                 305 add,00000084,00000004
+# @                 315 add,00000088,00000004
+# @                 325 add,0000008c,00000004
+# @                 325 add,00000000,00000814
+# @                 325 add,00000000,00000000
+# @                 375 add,00000000,00000001
+# @                 375 add,00000000,00000000
+# @                 385 add,00000000,00000004
+# @                 395 add,00000000,00000008
+run
+# @                 405 add,00000004,00000008
+# @                 405,LUI
+# @                 405,LUI
+# @                 415,AUIPC
+# @                 415,AUIPC
+# @                 415 add,000000b0,00123000
+# @                 425 add,000000b4,00123000
+# @                 425 add,00000000,00000000
+# @                 445 add,00000000,xxxxxxxx
+# @                 445 add,00000000,0000000a
+# @                 455 add,0000000a,0000000a
+# @                 455 add,0000000a,00000000
+# @                 465 add,0000000a,xxxxxxxx
+# @                 465 add,0000000a,ffffffff
+# @                 475 add,00000009,ffffffff
+# @                 475 add,000000c8,ffffffe0
+# @                 475 add,000000c8,fffffff4
+# @                 485 add,000000bc,fffffff4
+# @                 485 add,00000000,0000001a
+# @                 485 add,00000000,0000000a
+# @                 495 add,0000000a,0000000a
+# @                 495 add,0000000a,00000000
+# @                 505 add,0000000a,xxxxxxxx
+# @                 505 add,0000000a,ffffffff
+# @                 515 add,00000009,ffffffff
+# @                 515 add,000000c8,ffffffe0
+# @                 515 add,000000c8,fffffff4
+# @                 525 add,000000bc,fffffff4
+# @                 525 add,00000000,0000001a
+# @                 525 add,00000000,0000000a
+# @                 535 add,0000000a,0000000a
+# @                 535 add,0000000a,00000000
+# @                 545 add,0000000a,xxxxxxxx
+# @                 545 add,0000000a,ffffffff
+# @                 555 add,00000009,ffffffff
+# @                 555 add,000000c8,ffffffe0
+# @                 555 add,000000c8,fffffff4
+# @                 565 add,000000bc,fffffff4
+# @                 565 add,00000000,0000001a
+# @                 565 add,00000000,0000000a
+# @                 575 add,0000000a,0000000a
+# @                 575 add,0000000a,00000000
+# @                 585 add,0000000a,xxxxxxxx
+# @                 585 add,0000000a,ffffffff
+# @                 595 add,00000009,ffffffff
+# @                 595 add,000000c8,ffffffe0
+# @                 595 add,000000c8,fffffff4
+# @                 605 add,000000bc,fffffff4
+# @                 605 add,00000000,0000001a
+# @                 605 add,00000000,0000000a
+# @                 615 add,0000000a,0000000a
+# @                 615 add,0000000a,00000000
+# @                 625 add,0000000a,xxxxxxxx
+# @                 625 add,0000000a,ffffffff
+# @                 635 add,00000009,ffffffff
+# @                 635 add,000000c8,ffffffe0
+# @                 635 add,000000c8,fffffff4
+# @                 645 add,000000bc,fffffff4
+# @                 645 add,00000000,0000001a
+# @                 645 add,00000000,0000000a
+# @                 655 add,0000000a,0000000a
+# @                 655 add,0000000a,00000000
+# @                 665 add,0000000a,xxxxxxxx
+# @                 665 add,0000000a,ffffffff
+# @                 675 add,00000009,ffffffff
+# @                 675 add,000000c8,ffffffe0
+# @                 675 add,000000c8,fffffff4
+# @                 685 add,000000bc,fffffff4
+# @                 685 add,00000000,0000001a
+# @                 685 add,00000000,0000000a
+# @                 695 add,0000000a,0000000a
+# @                 695 add,0000000a,00000000
+# @                 705 add,0000000a,xxxxxxxx
+# @                 705 add,0000000a,ffffffff
+# @                 715 add,00000009,ffffffff
+# @                 715 add,000000c8,ffffffe0
+# @                 715 add,000000c8,fffffff4
+# @                 725 add,000000bc,fffffff4
+# @                 725 add,00000000,0000001a
+# @                 725 add,00000000,0000000a
+# @                 735 add,0000000a,0000000a
+# @                 735 add,0000000a,00000000
+# @                 745 add,0000000a,xxxxxxxx
+# @                 745 add,0000000a,ffffffff
+# @                 755 add,00000009,ffffffff
+# @                 755 add,000000c8,ffffffe0
+# @                 755 add,000000c8,fffffff4
+# @                 765 add,000000bc,fffffff4
+# @                 765 add,00000000,0000001a
+# @                 765 add,00000000,0000000a
+# @                 775 add,0000000a,0000000a
+# @                 775 add,0000000a,00000000
+# @                 785 add,0000000a,xxxxxxxx
+# @                 785 add,0000000a,ffffffff
+# @                 795 add,00000009,ffffffff
+# @                 795 add,000000c8,ffffffe0
+# @                 795 add,000000c8,fffffff4
+run
+# @                 805 add,000000bc,fffffff4
+# @                 805 add,00000000,0000001a
+# @                 805 add,00000000,0000000a
+# @                 815 add,0000000a,0000000a
+# @                 815 add,0000000a,00000000
+# @                 825 add,0000000a,xxxxxxxx
+# @                 825 add,0000000a,ffffffff
+# @                 835 add,00000009,ffffffff
+# @                 835 add,000000c8,ffffffe0
+# @                 835 add,000000c8,fffffff4
+# @                 845 add,000000bc,fffffff4
+# @                 845 add,00000000,0000001a
+# @                 845 add,00000000,0000000a
+# @                 855 add,0000000a,0000000a
+# @                 855 add,0000000a,00000000
+# @                 865 add,0000000a,xxxxxxxx
+# @                 865 add,0000000a,ffffffff
+# @                 875 add,00000009,ffffffff
+# @                 875 add,000000c8,ffffffe0
+# @                 875 add,000000c8,fffffff4
+# @                 885 add,000000bc,fffffff4
+# @                 885 add,00000000,0000001a
+# @                 885 add,00000000,0000000a
+# @                 895 add,0000000a,0000000a
+# @                 895 add,0000000a,00000000
+# @                 905 add,0000000a,xxxxxxxx
+# @                 905 add,0000000a,ffffffff
+# @                 915 add,00000009,ffffffff
+# @                 915 add,000000c8,ffffffe0
+# @                 915 add,000000c8,fffffff4
+# @                 925 add,000000bc,fffffff4
+# @                 925 add,00000000,0000001a
+# @                 925 add,00000000,0000000a
+# @                 935 add,0000000a,0000000a
+# @                 935 add,0000000a,00000000
+# @                 945 add,0000000a,xxxxxxxx
+# @                 945 add,0000000a,ffffffff
+# @                 955 add,00000009,ffffffff
+# @                 955 add,000000c8,ffffffe0
+# @                 955 add,000000c8,fffffff4
+# @                 965 add,000000bc,fffffff4
+# @                 965 add,00000000,0000001a
+# @                 965 add,00000000,0000000a
+# @                 975 add,0000000a,0000000a
+# @                 975 add,0000000a,00000000
+# @                 985 add,0000000a,xxxxxxxx
+# @                 985 add,0000000a,ffffffff
+# @                 995 add,00000009,ffffffff
+# @                 995 add,000000c8,ffffffe0
+# @                 995 add,000000c8,fffffff4
+# @                1005 add,000000bc,fffffff4
+# @                1005 add,00000000,0000001a
+# @                1005 add,00000000,0000000a
+# @                1015 add,0000000a,0000000a
+# @                1015 add,0000000a,00000000
+# @                1025 add,0000000a,xxxxxxxx
+# @                1025 add,0000000a,ffffffff
+# @                1035 add,00000009,ffffffff
+# @                1035 add,000000c8,ffffffe0
+# @                1035 add,000000c8,fffffff4
+# @                1045 add,000000bc,fffffff4
+# @                1045 add,00000000,0000001a
+# @                1045 add,00000000,0000000a
+# @                1055 add,0000000a,0000000a
+# @                1055 add,0000000a,00000000
+# @                1065 add,0000000a,xxxxxxxx
+# @                1065 add,0000000a,ffffffff
+# @                1075 add,00000009,ffffffff
+# @                1075 add,000000c8,ffffffe0
+# @                1075 add,000000c8,fffffff4
+# @                1085 add,000000bc,fffffff4
+# @                1085 add,00000000,0000001a
+# @                1085 add,00000000,0000000a
+# @                1095 add,0000000a,0000000a
+# @                1095 add,0000000a,00000000
+# @                1105 add,0000000a,xxxxxxxx
+# @                1105 add,0000000a,ffffffff
+# @                1115 add,00000009,ffffffff
+# @                1115 add,000000c8,ffffffe0
+# @                1115 add,000000c8,fffffff4
+# @                1125 add,000000bc,fffffff4
+# @                1125 add,00000000,0000001a
+# @                1125 add,00000000,0000000a
+# @                1135 add,0000000a,0000000a
+# @                1135 add,0000000a,00000000
+# @                1145 add,0000000a,xxxxxxxx
+# @                1145 add,0000000a,ffffffff
+# @                1155 add,00000009,ffffffff
+# @                1155 add,000000c8,ffffffe0
+# @                1155 add,000000c8,fffffff4
+# @                1165 add,000000bc,fffffff4
+# @                1165 add,00000000,0000001a
+# @                1165 add,00000000,0000000a
+# @                1175 add,0000000a,0000000a
+# @                1175 add,0000000a,00000000
+# @                1185 add,0000000a,xxxxxxxx
+# @                1185 add,0000000a,ffffffff
+# @                1195 add,00000009,ffffffff
+# @                1195 add,000000c8,ffffffe0
+# @                1195 add,000000c8,fffffff4
+run
+# @                1205 add,000000bc,fffffff4
+# @                1205 add,00000000,0000001a
+# @                1205 add,00000000,0000000a
+# @                1215 add,0000000a,0000000a
+# @                1215 add,0000000a,00000000
+# @                1225 add,0000000a,xxxxxxxx
+# @                1225 add,0000000a,ffffffff
+# @                1235 add,00000009,ffffffff
+# @                1235 add,000000c8,ffffffe0
+# @                1235 add,000000c8,fffffff4
+# @                1245 add,000000bc,fffffff4
+# @                1245 add,00000000,0000001a
+# @                1245 add,00000000,0000000a
+# @                1255 add,0000000a,0000000a
+# @                1255 add,0000000a,00000000
+# @                1265 add,0000000a,xxxxxxxx
+# @                1265 add,0000000a,ffffffff
+# @                1275 add,00000009,ffffffff
+# @                1275 add,000000c8,ffffffe0
+# @                1275 add,000000c8,fffffff4
+# @                1285 add,000000bc,fffffff4
+# @                1285 add,00000000,0000001a
+# @                1285 add,00000000,0000000a
+# @                1295 add,0000000a,0000000a
+# @                1295 add,0000000a,00000000
+# @                1305 add,0000000a,xxxxxxxx
+# @                1305 add,0000000a,ffffffff
+# @                1315 add,00000009,ffffffff
+# @                1315 add,000000c8,ffffffe0
+# @                1315 add,000000c8,fffffff4
+# @                1325 add,000000bc,fffffff4
+# @                1325 add,00000000,0000001a
+# @                1325 add,00000000,0000000a
+# @                1335 add,0000000a,0000000a
+# @                1335 add,0000000a,00000000
+# @                1345 add,0000000a,xxxxxxxx
+# @                1345 add,0000000a,ffffffff
+# @                1355 add,00000009,ffffffff
+# @                1355 add,000000c8,ffffffe0
+# @                1355 add,000000c8,fffffff4
+# @                1365 add,000000bc,fffffff4
+# @                1365 add,00000000,0000001a
+# @                1365 add,00000000,0000000a
+# @                1375 add,0000000a,0000000a
+# @                1375 add,0000000a,00000000
+# @                1385 add,0000000a,xxxxxxxx
+# @                1385 add,0000000a,ffffffff
+# @                1395 add,00000009,ffffffff
+# @                1395 add,000000c8,ffffffe0
+# @                1395 add,000000c8,fffffff4
+# @                1405 add,000000bc,fffffff4
+# @                1405 add,00000000,0000001a
+# @                1405 add,00000000,0000000a
+# @                1415 add,0000000a,0000000a
+# @                1415 add,0000000a,00000000
+# @                1425 add,0000000a,xxxxxxxx
+# @                1425 add,0000000a,ffffffff
+# @                1435 add,00000009,ffffffff
+# @                1435 add,000000c8,ffffffe0
+# @                1435 add,000000c8,fffffff4
+# @                1445 add,000000bc,fffffff4
+# @                1445 add,00000000,0000001a
+# @                1445 add,00000000,0000000a
+# @                1455 add,0000000a,0000000a
+# @                1455 add,0000000a,00000000
+# @                1465 add,0000000a,xxxxxxxx
+# @                1465 add,0000000a,ffffffff
+# @                1475 add,00000009,ffffffff
+# @                1475 add,000000c8,ffffffe0
+# @                1475 add,000000c8,fffffff4
+# @                1485 add,000000bc,fffffff4
+# @                1485 add,00000000,0000001a
+# @                1485 add,00000000,0000000a
+# @                1495 add,0000000a,0000000a
+# @                1495 add,0000000a,00000000
+# @                1505 add,0000000a,xxxxxxxx
+# @                1505 add,0000000a,ffffffff
+# @                1515 add,00000009,ffffffff
+# @                1515 add,000000c8,ffffffe0
+# @                1515 add,000000c8,fffffff4
+# @                1525 add,000000bc,fffffff4
+# @                1525 add,00000000,0000001a
+# @                1525 add,00000000,0000000a
+# @                1535 add,0000000a,0000000a
+# @                1535 add,0000000a,00000000
+# @                1545 add,0000000a,xxxxxxxx
+# @                1545 add,0000000a,ffffffff
+# @                1555 add,00000009,ffffffff
+# @                1555 add,000000c8,ffffffe0
+# @                1555 add,000000c8,fffffff4
+# @                1565 add,000000bc,fffffff4
+# @                1565 add,00000000,0000001a
+# @                1565 add,00000000,0000000a
+# @                1575 add,0000000a,0000000a
+# @                1575 add,0000000a,00000000
+# @                1585 add,0000000a,xxxxxxxx
+# @                1585 add,0000000a,ffffffff
+# @                1595 add,00000009,ffffffff
+# @                1595 add,000000c8,ffffffe0
+# @                1595 add,000000c8,fffffff4
+run
+# @                1605 add,000000bc,fffffff4
+# @                1605 add,00000000,0000001a
+# @                1605 add,00000000,0000000a
+# @                1615 add,0000000a,0000000a
+# @                1615 add,0000000a,00000000
+# @                1625 add,0000000a,xxxxxxxx
+# @                1625 add,0000000a,ffffffff
+# @                1635 add,00000009,ffffffff
+# @                1635 add,000000c8,ffffffe0
+# @                1635 add,000000c8,fffffff4
+# @                1645 add,000000bc,fffffff4
+# @                1645 add,00000000,0000001a
+# @                1645 add,00000000,0000000a
+# @                1655 add,0000000a,0000000a
+# @                1655 add,0000000a,00000000
+# @                1665 add,0000000a,xxxxxxxx
+# @                1665 add,0000000a,ffffffff
+# @                1675 add,00000009,ffffffff
+# @                1675 add,000000c8,ffffffe0
+# @                1675 add,000000c8,fffffff4
+# @                1685 add,000000bc,fffffff4
+# @                1685 add,00000000,0000001a
+# @                1685 add,00000000,0000000a
+# @                1695 add,0000000a,0000000a
+# @                1695 add,0000000a,00000000
+# @                1705 add,0000000a,xxxxxxxx
+# @                1705 add,0000000a,ffffffff
+# @                1715 add,00000009,ffffffff
+# @                1715 add,000000c8,ffffffe0
+# @                1715 add,000000c8,fffffff4
+# @                1725 add,000000bc,fffffff4
+# @                1725 add,00000000,0000001a
+# @                1725 add,00000000,0000000a
+# @                1735 add,0000000a,0000000a
+# @                1735 add,0000000a,00000000
+# @                1745 add,0000000a,xxxxxxxx
+# @                1745 add,0000000a,ffffffff
+# @                1755 add,00000009,ffffffff
+# @                1755 add,000000c8,ffffffe0
+# @                1755 add,000000c8,fffffff4
+# @                1765 add,000000bc,fffffff4
+# @                1765 add,00000000,0000001a
+# @                1765 add,00000000,0000000a
+# @                1775 add,0000000a,0000000a
+# @                1775 add,0000000a,00000000
+# @                1785 add,0000000a,xxxxxxxx
+# @                1785 add,0000000a,ffffffff
+# @                1795 add,00000009,ffffffff
+# @                1795 add,000000c8,ffffffe0
+# @                1795 add,000000c8,fffffff4
+# @                1805 add,000000bc,fffffff4
+# @                1805 add,00000000,0000001a
+# @                1805 add,00000000,0000000a
+# @                1815 add,0000000a,0000000a
+# @                1815 add,0000000a,00000000
+# @                1825 add,0000000a,xxxxxxxx
+# @                1825 add,0000000a,ffffffff
+# @                1835 add,00000009,ffffffff
+# @                1835 add,000000c8,ffffffe0
+# @                1835 add,000000c8,fffffff4
+# @                1845 add,000000bc,fffffff4
+# @                1845 add,00000000,0000001a
+# @                1845 add,00000000,0000000a
+# @                1855 add,0000000a,0000000a
+# @                1855 add,0000000a,00000000
+# @                1865 add,0000000a,xxxxxxxx
+# @                1865 add,0000000a,ffffffff
+# @                1875 add,00000009,ffffffff
+# @                1875 add,000000c8,ffffffe0
+# @                1875 add,000000c8,fffffff4
+# @                1885 add,000000bc,fffffff4
+# @                1885 add,00000000,0000001a
+# @                1885 add,00000000,0000000a
+# @                1895 add,0000000a,0000000a
+# @                1895 add,0000000a,00000000
+# @                1905 add,0000000a,xxxxxxxx
+# @                1905 add,0000000a,ffffffff
+# @                1915 add,00000009,ffffffff
+# @                1915 add,000000c8,ffffffe0
+# @                1915 add,000000c8,fffffff4
+# @                1925 add,000000bc,fffffff4
+# @                1925 add,00000000,0000001a
+# @                1925 add,00000000,0000000a
+# @                1935 add,0000000a,0000000a
+# @                1935 add,0000000a,00000000
+# @                1945 add,0000000a,xxxxxxxx
+# @                1945 add,0000000a,ffffffff
+# @                1955 add,00000009,ffffffff
+# @                1955 add,000000c8,ffffffe0
+# @                1955 add,000000c8,fffffff4
+# @                1965 add,000000bc,fffffff4
+# @                1965 add,00000000,0000001a
+# @                1965 add,00000000,0000000a
+# @                1975 add,0000000a,0000000a
+# @                1975 add,0000000a,00000000
+# @                1985 add,0000000a,xxxxxxxx
+# @                1985 add,0000000a,ffffffff
+# @                1995 add,00000009,ffffffff
+# @                1995 add,000000c8,ffffffe0
+# @                1995 add,000000c8,fffffff4
+run
+# @                2005 add,000000bc,fffffff4
+# @                2005 add,00000000,0000001a
+# @                2005 add,00000000,0000000a
+# @                2015 add,0000000a,0000000a
+# @                2015 add,0000000a,00000000
+# @                2025 add,0000000a,xxxxxxxx
+# @                2025 add,0000000a,ffffffff
+# @                2035 add,00000009,ffffffff
+# @                2035 add,000000c8,ffffffe0
+# @                2035 add,000000c8,fffffff4
+# @                2045 add,000000bc,fffffff4
+# @                2045 add,00000000,0000001a
+# @                2045 add,00000000,0000000a
+# @                2055 add,0000000a,0000000a
+# @                2055 add,0000000a,00000000
+# @                2065 add,0000000a,xxxxxxxx
+# @                2065 add,0000000a,ffffffff
+# @                2075 add,00000009,ffffffff
+# @                2075 add,000000c8,ffffffe0
+# @                2075 add,000000c8,fffffff4
+# @                2085 add,000000bc,fffffff4
+# @                2085 add,00000000,0000001a
+# @                2085 add,00000000,0000000a
+# @                2095 add,0000000a,0000000a
+# @                2095 add,0000000a,00000000
+# @                2105 add,0000000a,xxxxxxxx
+# @                2105 add,0000000a,ffffffff
+# @                2115 add,00000009,ffffffff
+# @                2115 add,000000c8,ffffffe0
+# @                2115 add,000000c8,fffffff4
+# @                2125 add,000000bc,fffffff4
+# @                2125 add,00000000,0000001a
+# @                2125 add,00000000,0000000a
+# @                2135 add,0000000a,0000000a
+# @                2135 add,0000000a,00000000
+# @                2145 add,0000000a,xxxxxxxx
+# @                2145 add,0000000a,ffffffff
+# @                2155 add,00000009,ffffffff
+# @                2155 add,000000c8,ffffffe0
+# @                2155 add,000000c8,fffffff4
+# @                2165 add,000000bc,fffffff4
+# @                2165 add,00000000,0000001a
+# @                2165 add,00000000,0000000a
+# @                2175 add,0000000a,0000000a
+# @                2175 add,0000000a,00000000
+# @                2185 add,0000000a,xxxxxxxx
+# @                2185 add,0000000a,ffffffff
+# @                2195 add,00000009,ffffffff
+# @                2195 add,000000c8,ffffffe0
+# @                2195 add,000000c8,fffffff4
+# @                2205 add,000000bc,fffffff4
+# @                2205 add,00000000,0000001a
+# @                2205 add,00000000,0000000a
+# @                2215 add,0000000a,0000000a
+# @                2215 add,0000000a,00000000
+# @                2225 add,0000000a,xxxxxxxx
+# @                2225 add,0000000a,ffffffff
+# @                2235 add,00000009,ffffffff
+# @                2235 add,000000c8,ffffffe0
+# @                2235 add,000000c8,fffffff4
+# @                2245 add,000000bc,fffffff4
+# @                2245 add,00000000,0000001a
+# @                2245 add,00000000,0000000a
+# @                2255 add,0000000a,0000000a
+# @                2255 add,0000000a,00000000
+# @                2265 add,0000000a,xxxxxxxx
+# @                2265 add,0000000a,ffffffff
+# @                2275 add,00000009,ffffffff
+# @                2275 add,000000c8,ffffffe0
+# @                2275 add,000000c8,fffffff4
+# @                2285 add,000000bc,fffffff4
+# @                2285 add,00000000,0000001a
+# @                2285 add,00000000,0000000a
+# @                2295 add,0000000a,0000000a
+# @                2295 add,0000000a,00000000
+# @                2305 add,0000000a,xxxxxxxx
+# @                2305 add,0000000a,ffffffff
+# @                2315 add,00000009,ffffffff
+# @                2315 add,000000c8,ffffffe0
+# @                2315 add,000000c8,fffffff4
+# @                2325 add,000000bc,fffffff4
+# @                2325 add,00000000,0000001a
+# @                2325 add,00000000,0000000a
+# @                2335 add,0000000a,0000000a
+# @                2335 add,0000000a,00000000
+# @                2345 add,0000000a,xxxxxxxx
+# @                2345 add,0000000a,ffffffff
+# @                2355 add,00000009,ffffffff
+# @                2355 add,000000c8,ffffffe0
+# @                2355 add,000000c8,fffffff4
+# @                2365 add,000000bc,fffffff4
+# @                2365 add,00000000,0000001a
+# @                2365 add,00000000,0000000a
+# @                2375 add,0000000a,0000000a
+# @                2375 add,0000000a,00000000
+# @                2385 add,0000000a,xxxxxxxx
+# @                2385 add,0000000a,ffffffff
+# @                2395 add,00000009,ffffffff
+# @                2395 add,000000c8,ffffffe0
+# @                2395 add,000000c8,fffffff4
+run
+# @                2405 add,000000bc,fffffff4
+# @                2405 add,00000000,0000001a
+# @                2405 add,00000000,0000000a
+# @                2415 add,0000000a,0000000a
+# @                2415 add,0000000a,00000000
+# @                2425 add,0000000a,xxxxxxxx
+# @                2425 add,0000000a,ffffffff
+# @                2435 add,00000009,ffffffff
+# @                2435 add,000000c8,ffffffe0
+# @                2435 add,000000c8,fffffff4
+# @                2445 add,000000bc,fffffff4
+# @                2445 add,00000000,0000001a
+# @                2445 add,00000000,0000000a
+# @                2455 add,0000000a,0000000a
+# @                2455 add,0000000a,00000000
+# @                2465 add,0000000a,xxxxxxxx
+# @                2465 add,0000000a,ffffffff
+# @                2475 add,00000009,ffffffff
+# @                2475 add,000000c8,ffffffe0
+# @                2475 add,000000c8,fffffff4
+# @                2485 add,000000bc,fffffff4
+# @                2485 add,00000000,0000001a
+# @                2485 add,00000000,0000000a
+# @                2495 add,0000000a,0000000a
+# @                2495 add,0000000a,00000000
+# @                2505 add,0000000a,xxxxxxxx
+# @                2505 add,0000000a,ffffffff
+# @                2515 add,00000009,ffffffff
+# @                2515 add,000000c8,ffffffe0
+# @                2515 add,000000c8,fffffff4
+# @                2525 add,000000bc,fffffff4
+# @                2525 add,00000000,0000001a
+# @                2525 add,00000000,0000000a
+# @                2535 add,0000000a,0000000a
+# @                2535 add,0000000a,00000000
+# @                2545 add,0000000a,xxxxxxxx
+# @                2545 add,0000000a,ffffffff
+# @                2555 add,00000009,ffffffff
+# @                2555 add,000000c8,ffffffe0
+# @                2555 add,000000c8,fffffff4
+# @                2565 add,000000bc,fffffff4
+# @                2565 add,00000000,0000001a
+# @                2565 add,00000000,0000000a
+# @                2575 add,0000000a,0000000a
+# @                2575 add,0000000a,00000000
+# @                2585 add,0000000a,xxxxxxxx
+# @                2585 add,0000000a,ffffffff
+# @                2595 add,00000009,ffffffff
+# @                2595 add,000000c8,ffffffe0
+# @                2595 add,000000c8,fffffff4
+# @                2605 add,000000bc,fffffff4
+# @                2605 add,00000000,0000001a
+# @                2605 add,00000000,0000000a
+# @                2615 add,0000000a,0000000a
+# @                2615 add,0000000a,00000000
+# @                2625 add,0000000a,xxxxxxxx
+# @                2625 add,0000000a,ffffffff
+# @                2635 add,00000009,ffffffff
+# @                2635 add,000000c8,ffffffe0
+# @                2635 add,000000c8,fffffff4
+# @                2645 add,000000bc,fffffff4
+# @                2645 add,00000000,0000001a
+# @                2645 add,00000000,0000000a
+# @                2655 add,0000000a,0000000a
+# @                2655 add,0000000a,00000000
+# @                2665 add,0000000a,xxxxxxxx
+# @                2665 add,0000000a,ffffffff
+# @                2675 add,00000009,ffffffff
+# @                2675 add,000000c8,ffffffe0
+# @                2675 add,000000c8,fffffff4
+# @                2685 add,000000bc,fffffff4
+# @                2685 add,00000000,0000001a
+# @                2685 add,00000000,0000000a
+# @                2695 add,0000000a,0000000a
+# @                2695 add,0000000a,00000000
+# @                2705 add,0000000a,xxxxxxxx
+# @                2705 add,0000000a,ffffffff
+# @                2715 add,00000009,ffffffff
+# @                2715 add,000000c8,ffffffe0
+# @                2715 add,000000c8,fffffff4
+# @                2725 add,000000bc,fffffff4
+# @                2725 add,00000000,0000001a
+# @                2725 add,00000000,0000000a
+# @                2735 add,0000000a,0000000a
+# @                2735 add,0000000a,00000000
+# @                2745 add,0000000a,xxxxxxxx
+# @                2745 add,0000000a,ffffffff
+# @                2755 add,00000009,ffffffff
+# @                2755 add,000000c8,ffffffe0
+# @                2755 add,000000c8,fffffff4
+# @                2765 add,000000bc,fffffff4
+# @                2765 add,00000000,0000001a
+# @                2765 add,00000000,0000000a
+# @                2775 add,0000000a,0000000a
+# @                2775 add,0000000a,00000000
+# @                2785 add,0000000a,xxxxxxxx
+# @                2785 add,0000000a,ffffffff
+# @                2795 add,00000009,ffffffff
+# @                2795 add,000000c8,ffffffe0
+# @                2795 add,000000c8,fffffff4
+run
+# @                2805 add,000000bc,fffffff4
+# @                2805 add,00000000,0000001a
+# @                2805 add,00000000,0000000a
+# @                2815 add,0000000a,0000000a
+# @                2815 add,0000000a,00000000
+# @                2825 add,0000000a,xxxxxxxx
+# @                2825 add,0000000a,ffffffff
+# @                2835 add,00000009,ffffffff
+# @                2835 add,000000c8,ffffffe0
+# @                2835 add,000000c8,fffffff4
+# @                2845 add,000000bc,fffffff4
+# @                2845 add,00000000,0000001a
+# @                2845 add,00000000,0000000a
+# @                2855 add,0000000a,0000000a
+# @                2855 add,0000000a,00000000
+# @                2865 add,0000000a,xxxxxxxx
+# @                2865 add,0000000a,ffffffff
+# @                2875 add,00000009,ffffffff
+# @                2875 add,000000c8,ffffffe0
+# @                2875 add,000000c8,fffffff4
+# @                2885 add,000000bc,fffffff4
+# @                2885 add,00000000,0000001a
+# @                2885 add,00000000,0000000a
+# @                2895 add,0000000a,0000000a
+# @                2895 add,0000000a,00000000
+# @                2905 add,0000000a,xxxxxxxx
+# @                2905 add,0000000a,ffffffff
+# @                2915 add,00000009,ffffffff
+# @                2915 add,000000c8,ffffffe0
+# @                2915 add,000000c8,fffffff4
+# @                2925 add,000000bc,fffffff4
+# @                2925 add,00000000,0000001a
+# @                2925 add,00000000,0000000a
+# @                2935 add,0000000a,0000000a
+# @                2935 add,0000000a,00000000
+# @                2945 add,0000000a,xxxxxxxx
+# @                2945 add,0000000a,ffffffff
+# @                2955 add,00000009,ffffffff
+# @                2955 add,000000c8,ffffffe0
+# @                2955 add,000000c8,fffffff4
+# @                2965 add,000000bc,fffffff4
+# @                2965 add,00000000,0000001a
+# @                2965 add,00000000,0000000a
+# @                2975 add,0000000a,0000000a
+# @                2975 add,0000000a,00000000
+# @                2985 add,0000000a,xxxxxxxx
+# @                2985 add,0000000a,ffffffff
+# @                2995 add,00000009,ffffffff
+# @                2995 add,000000c8,ffffffe0
+# @                2995 add,000000c8,fffffff4
+# @                3005 add,000000bc,fffffff4
+# @                3005 add,00000000,0000001a
+# @                3005 add,00000000,0000000a
+# @                3015 add,0000000a,0000000a
+# @                3015 add,0000000a,00000000
+# @                3025 add,0000000a,xxxxxxxx
+# @                3025 add,0000000a,ffffffff
+# @                3035 add,00000009,ffffffff
+# @                3035 add,000000c8,ffffffe0
+# @                3035 add,000000c8,fffffff4
+# @                3045 add,000000bc,fffffff4
+# @                3045 add,00000000,0000001a
+# @                3045 add,00000000,0000000a
+# @                3055 add,0000000a,0000000a
+# @                3055 add,0000000a,00000000
+# @                3065 add,0000000a,xxxxxxxx
+# @                3065 add,0000000a,ffffffff
+# @                3075 add,00000009,ffffffff
+# @                3075 add,000000c8,ffffffe0
+# @                3075 add,000000c8,fffffff4
+# @                3085 add,000000bc,fffffff4
+# @                3085 add,00000000,0000001a
+# @                3085 add,00000000,0000000a
+# @                3095 add,0000000a,0000000a
+# @                3095 add,0000000a,00000000
+# @                3105 add,0000000a,xxxxxxxx
+# @                3105 add,0000000a,ffffffff
+# @                3115 add,00000009,ffffffff
+# @                3115 add,000000c8,ffffffe0
+# @                3115 add,000000c8,fffffff4
+# @                3125 add,000000bc,fffffff4
+# @                3125 add,00000000,0000001a
+# @                3125 add,00000000,0000000a
+# @                3135 add,0000000a,0000000a
+# @                3135 add,0000000a,00000000
+# @                3145 add,0000000a,xxxxxxxx
+# @                3145 add,0000000a,ffffffff
+# @                3155 add,00000009,ffffffff
+# @                3155 add,000000c8,ffffffe0
+# @                3155 add,000000c8,fffffff4
+# @                3165 add,000000bc,fffffff4
+# @                3165 add,00000000,0000001a
+# @                3165 add,00000000,0000000a
+# @                3175 add,0000000a,0000000a
+# @                3175 add,0000000a,00000000
+# @                3185 add,0000000a,xxxxxxxx
+# @                3185 add,0000000a,ffffffff
+# @                3195 add,00000009,ffffffff
+# @                3195 add,000000c8,ffffffe0
+# @                3195 add,000000c8,fffffff4
+run
+# @                3205 add,000000bc,fffffff4
+# @                3205 add,00000000,0000001a
+# @                3205 add,00000000,0000000a
+# @                3215 add,0000000a,0000000a
+# @                3215 add,0000000a,00000000
+# @                3225 add,0000000a,xxxxxxxx
+# @                3225 add,0000000a,ffffffff
+# @                3235 add,00000009,ffffffff
+# @                3235 add,000000c8,ffffffe0
+# @                3235 add,000000c8,fffffff4
+# @                3245 add,000000bc,fffffff4
+# @                3245 add,00000000,0000001a
+# @                3245 add,00000000,0000000a
+# @                3255 add,0000000a,0000000a
+# @                3255 add,0000000a,00000000
+# @                3265 add,0000000a,xxxxxxxx
+# @                3265 add,0000000a,ffffffff
+# @                3275 add,00000009,ffffffff
+# @                3275 add,000000c8,ffffffe0
+# @                3275 add,000000c8,fffffff4
+# @                3285 add,000000bc,fffffff4
+# @                3285 add,00000000,0000001a
+# @                3285 add,00000000,0000000a
+# @                3295 add,0000000a,0000000a
+# @                3295 add,0000000a,00000000
+# @                3305 add,0000000a,xxxxxxxx
+# @                3305 add,0000000a,ffffffff
+# @                3315 add,00000009,ffffffff
+# @                3315 add,000000c8,ffffffe0
+# @                3315 add,000000c8,fffffff4
+# @                3325 add,000000bc,fffffff4
+# @                3325 add,00000000,0000001a
+# @                3325 add,00000000,0000000a
+# @                3335 add,0000000a,0000000a
+# @                3335 add,0000000a,00000000
+# @                3345 add,0000000a,xxxxxxxx
+# @                3345 add,0000000a,ffffffff
+# @                3355 add,00000009,ffffffff
+# @                3355 add,000000c8,ffffffe0
+# @                3355 add,000000c8,fffffff4
+# @                3365 add,000000bc,fffffff4
+# @                3365 add,00000000,0000001a
+# @                3365 add,00000000,0000000a
+# @                3375 add,0000000a,0000000a
+# @                3375 add,0000000a,00000000
+# @                3385 add,0000000a,xxxxxxxx
+# @                3385 add,0000000a,ffffffff
+# @                3395 add,00000009,ffffffff
+# @                3395 add,000000c8,ffffffe0
+# @                3395 add,000000c8,fffffff4
+# @                3405 add,000000bc,fffffff4
+# @                3405 add,00000000,0000001a
+# @                3405 add,00000000,0000000a
+# @                3415 add,0000000a,0000000a
+# @                3415 add,0000000a,00000000
+# @                3425 add,0000000a,xxxxxxxx
+# @                3425 add,0000000a,ffffffff
+# @                3435 add,00000009,ffffffff
+# @                3435 add,000000c8,ffffffe0
+# @                3435 add,000000c8,fffffff4
+# @                3445 add,000000bc,fffffff4
+# @                3445 add,00000000,0000001a
+# @                3445 add,00000000,0000000a
+# @                3455 add,0000000a,0000000a
+# @                3455 add,0000000a,00000000
+# @                3465 add,0000000a,xxxxxxxx
+# @                3465 add,0000000a,ffffffff
+# @                3475 add,00000009,ffffffff
+# @                3475 add,000000c8,ffffffe0
+# @                3475 add,000000c8,fffffff4
+# @                3485 add,000000bc,fffffff4
+# @                3485 add,00000000,0000001a
+# @                3485 add,00000000,0000000a
+# @                3495 add,0000000a,0000000a
+# @                3495 add,0000000a,00000000
+# @                3505 add,0000000a,xxxxxxxx
+# @                3505 add,0000000a,ffffffff
+# @                3515 add,00000009,ffffffff
+# @                3515 add,000000c8,ffffffe0
+# @                3515 add,000000c8,fffffff4
+# @                3525 add,000000bc,fffffff4
+# @                3525 add,00000000,0000001a
+# @                3525 add,00000000,0000000a
+# @                3535 add,0000000a,0000000a
+# @                3535 add,0000000a,00000000
+# @                3545 add,0000000a,xxxxxxxx
+# @                3545 add,0000000a,ffffffff
+# @                3555 add,00000009,ffffffff
+# @                3555 add,000000c8,ffffffe0
+# @                3555 add,000000c8,fffffff4
+# @                3565 add,000000bc,fffffff4
+# @                3565 add,00000000,0000001a
+# @                3565 add,00000000,0000000a
+# @                3575 add,0000000a,0000000a
+# @                3575 add,0000000a,00000000
+# @                3585 add,0000000a,xxxxxxxx
+# @                3585 add,0000000a,ffffffff
+# @                3595 add,00000009,ffffffff
+# @                3595 add,000000c8,ffffffe0
+# @                3595 add,000000c8,fffffff4
+run
+# @                3605 add,000000bc,fffffff4
+# @                3605 add,00000000,0000001a
+# @                3605 add,00000000,0000000a
+# @                3615 add,0000000a,0000000a
+# @                3615 add,0000000a,00000000
+# @                3625 add,0000000a,xxxxxxxx
+# @                3625 add,0000000a,ffffffff
+# @                3635 add,00000009,ffffffff
+# @                3635 add,000000c8,ffffffe0
+# @                3635 add,000000c8,fffffff4
+# @                3645 add,000000bc,fffffff4
+# @                3645 add,00000000,0000001a
+# @                3645 add,00000000,0000000a
+# @                3655 add,0000000a,0000000a
+# @                3655 add,0000000a,00000000
+# @                3665 add,0000000a,xxxxxxxx
+# @                3665 add,0000000a,ffffffff
+# @                3675 add,00000009,ffffffff
+# @                3675 add,000000c8,ffffffe0
+# @                3675 add,000000c8,fffffff4
+# @                3685 add,000000bc,fffffff4
+# @                3685 add,00000000,0000001a
+# @                3685 add,00000000,0000000a
+# @                3695 add,0000000a,0000000a
+# @                3695 add,0000000a,00000000
+# @                3705 add,0000000a,xxxxxxxx
+# @                3705 add,0000000a,ffffffff
+# @                3715 add,00000009,ffffffff
+# @                3715 add,000000c8,ffffffe0
+# @                3715 add,000000c8,fffffff4
+# @                3725 add,000000bc,fffffff4
+# @                3725 add,00000000,0000001a
+# @                3725 add,00000000,0000000a
+# @                3735 add,0000000a,0000000a
+# @                3735 add,0000000a,00000000
+# @                3745 add,0000000a,xxxxxxxx
+# @                3745 add,0000000a,ffffffff
+# @                3755 add,00000009,ffffffff
+# @                3755 add,000000c8,ffffffe0
+# @                3755 add,000000c8,fffffff4
+# @                3765 add,000000bc,fffffff4
+# @                3765 add,00000000,0000001a
+# @                3765 add,00000000,0000000a
+# @                3775 add,0000000a,0000000a
+# @                3775 add,0000000a,00000000
+# @                3785 add,0000000a,xxxxxxxx
+# @                3785 add,0000000a,ffffffff
+# @                3795 add,00000009,ffffffff
+# @                3795 add,000000c8,ffffffe0
+# @                3795 add,000000c8,fffffff4
+# @                3805 add,000000bc,fffffff4
+# @                3805 add,00000000,0000001a
+# @                3805 add,00000000,0000000a
+# @                3815 add,0000000a,0000000a
+# @                3815 add,0000000a,00000000
+# @                3825 add,0000000a,xxxxxxxx
+# @                3825 add,0000000a,ffffffff
+# @                3835 add,00000009,ffffffff
+# @                3835 add,000000c8,ffffffe0
+# @                3835 add,000000c8,fffffff4
+# @                3845 add,000000bc,fffffff4
+# @                3845 add,00000000,0000001a
+# @                3845 add,00000000,0000000a
+# @                3855 add,0000000a,0000000a
+# @                3855 add,0000000a,00000000
+# @                3865 add,0000000a,xxxxxxxx
+# @                3865 add,0000000a,ffffffff
+# @                3875 add,00000009,ffffffff
+# @                3875 add,000000c8,ffffffe0
+# @                3875 add,000000c8,fffffff4
+# @                3885 add,000000bc,fffffff4
+# @                3885 add,00000000,0000001a
+# @                3885 add,00000000,0000000a
+# @                3895 add,0000000a,0000000a
+# @                3895 add,0000000a,00000000
+# @                3905 add,0000000a,xxxxxxxx
+# @                3905 add,0000000a,ffffffff
+# @                3915 add,00000009,ffffffff
+# @                3915 add,000000c8,ffffffe0
+# @                3915 add,000000c8,fffffff4
+# @                3925 add,000000bc,fffffff4
+# @                3925 add,00000000,0000001a
+# @                3925 add,00000000,0000000a
+# @                3935 add,0000000a,0000000a
+# @                3935 add,0000000a,00000000
+# @                3945 add,0000000a,xxxxxxxx
+# @                3945 add,0000000a,ffffffff
+# @                3955 add,00000009,ffffffff
+# @                3955 add,000000c8,ffffffe0
+# @                3955 add,000000c8,fffffff4
+# @                3965 add,000000bc,fffffff4
+# @                3965 add,00000000,0000001a
+# @                3965 add,00000000,0000000a
+# @                3975 add,0000000a,0000000a
+# @                3975 add,0000000a,00000000
+# @                3985 add,0000000a,xxxxxxxx
+# @                3985 add,0000000a,ffffffff
+# @                3995 add,00000009,ffffffff
+# @                3995 add,000000c8,ffffffe0
+# @                3995 add,000000c8,fffffff4
+run
+# @                4005 add,000000bc,fffffff4
+# @                4005 add,00000000,0000001a
+# @                4005 add,00000000,0000000a
+# @                4015 add,0000000a,0000000a
+# @                4015 add,0000000a,00000000
+# @                4025 add,0000000a,xxxxxxxx
+# @                4025 add,0000000a,ffffffff
+# @                4035 add,00000009,ffffffff
+# @                4035 add,000000c8,ffffffe0
+# @                4035 add,000000c8,fffffff4
+# @                4045 add,000000bc,fffffff4
+# @                4045 add,00000000,0000001a
+# @                4045 add,00000000,0000000a
+# @                4055 add,0000000a,0000000a
+# @                4055 add,0000000a,00000000
+# @                4065 add,0000000a,xxxxxxxx
+# @                4065 add,0000000a,ffffffff
+# @                4075 add,00000009,ffffffff
+# @                4075 add,000000c8,ffffffe0
+# @                4075 add,000000c8,fffffff4
+# @                4085 add,000000bc,fffffff4
+# @                4085 add,00000000,0000001a
+# @                4085 add,00000000,0000000a
+# @                4095 add,0000000a,0000000a
+# @                4095 add,0000000a,00000000
+# @                4105 add,0000000a,xxxxxxxx
+# @                4105 add,0000000a,ffffffff
+# @                4115 add,00000009,ffffffff
+# @                4115 add,000000c8,ffffffe0
+# @                4115 add,000000c8,fffffff4
+# @                4125 add,000000bc,fffffff4
+# @                4125 add,00000000,0000001a
+# @                4125 add,00000000,0000000a
+# @                4135 add,0000000a,0000000a
+# @                4135 add,0000000a,00000000
+# @                4145 add,0000000a,xxxxxxxx
+# @                4145 add,0000000a,ffffffff
+# @                4155 add,00000009,ffffffff
+# @                4155 add,000000c8,ffffffe0
+# @                4155 add,000000c8,fffffff4
+# @                4165 add,000000bc,fffffff4
+# @                4165 add,00000000,0000001a
+# @                4165 add,00000000,0000000a
+# @                4175 add,0000000a,0000000a
+# @                4175 add,0000000a,00000000
+# @                4185 add,0000000a,xxxxxxxx
+# @                4185 add,0000000a,ffffffff
+# @                4195 add,00000009,ffffffff
+# @                4195 add,000000c8,ffffffe0
+# @                4195 add,000000c8,fffffff4
+# @                4205 add,000000bc,fffffff4
+# @                4205 add,00000000,0000001a
+# @                4205 add,00000000,0000000a
+# @                4215 add,0000000a,0000000a
+# @                4215 add,0000000a,00000000
+# @                4225 add,0000000a,xxxxxxxx
+# @                4225 add,0000000a,ffffffff
+# @                4235 add,00000009,ffffffff
+# @                4235 add,000000c8,ffffffe0
+# @                4235 add,000000c8,fffffff4
+# @                4245 add,000000bc,fffffff4
+# @                4245 add,00000000,0000001a
+# @                4245 add,00000000,0000000a
+# @                4255 add,0000000a,0000000a
+# @                4255 add,0000000a,00000000
+# @                4265 add,0000000a,xxxxxxxx
+# @                4265 add,0000000a,ffffffff
+# @                4275 add,00000009,ffffffff
+# @                4275 add,000000c8,ffffffe0
+# @                4275 add,000000c8,fffffff4
+# @                4285 add,000000bc,fffffff4
+# @                4285 add,00000000,0000001a
+# @                4285 add,00000000,0000000a
+# @                4295 add,0000000a,0000000a
+# @                4295 add,0000000a,00000000
+# @                4305 add,0000000a,xxxxxxxx
+# @                4305 add,0000000a,ffffffff
+# @                4315 add,00000009,ffffffff
+# @                4315 add,000000c8,ffffffe0
+# @                4315 add,000000c8,fffffff4
+# @                4325 add,000000bc,fffffff4
+# @                4325 add,00000000,0000001a
+# @                4325 add,00000000,0000000a
+# @                4335 add,0000000a,0000000a
+# @                4335 add,0000000a,00000000
+# @                4345 add,0000000a,xxxxxxxx
+# @                4345 add,0000000a,ffffffff
+# @                4355 add,00000009,ffffffff
+# @                4355 add,000000c8,ffffffe0
+# @                4355 add,000000c8,fffffff4
+# @                4365 add,000000bc,fffffff4
+# @                4365 add,00000000,0000001a
+# @                4365 add,00000000,0000000a
+# @                4375 add,0000000a,0000000a
+# @                4375 add,0000000a,00000000
+# @                4385 add,0000000a,xxxxxxxx
+# @                4385 add,0000000a,ffffffff
+# @                4395 add,00000009,ffffffff
+# @                4395 add,000000c8,ffffffe0
+# @                4395 add,000000c8,fffffff4
+run
+# @                4405 add,000000bc,fffffff4
+# @                4405 add,00000000,0000001a
+# @                4405 add,00000000,0000000a
+# @                4415 add,0000000a,0000000a
+# @                4415 add,0000000a,00000000
+# @                4425 add,0000000a,xxxxxxxx
+# @                4425 add,0000000a,ffffffff
+# @                4435 add,00000009,ffffffff
+# @                4435 add,000000c8,ffffffe0
+# @                4435 add,000000c8,fffffff4
+# @                4445 add,000000bc,fffffff4
+# @                4445 add,00000000,0000001a
+# @                4445 add,00000000,0000000a
+# @                4455 add,0000000a,0000000a
+# @                4455 add,0000000a,00000000
+# @                4465 add,0000000a,xxxxxxxx
+# @                4465 add,0000000a,ffffffff
+# @                4475 add,00000009,ffffffff
+# @                4475 add,000000c8,ffffffe0
+# @                4475 add,000000c8,fffffff4
+# @                4485 add,000000bc,fffffff4
+# @                4485 add,00000000,0000001a
+# @                4485 add,00000000,0000000a
+# @                4495 add,0000000a,0000000a
+# @                4495 add,0000000a,00000000
+# @                4505 add,0000000a,xxxxxxxx
+# @                4505 add,0000000a,ffffffff
+# @                4515 add,00000009,ffffffff
+# @                4515 add,000000c8,ffffffe0
+# @                4515 add,000000c8,fffffff4
+# @                4525 add,000000bc,fffffff4
+# @                4525 add,00000000,0000001a
+# @                4525 add,00000000,0000000a
+# @                4535 add,0000000a,0000000a
+# @                4535 add,0000000a,00000000
+# @                4545 add,0000000a,xxxxxxxx
+# @                4545 add,0000000a,ffffffff
+# @                4555 add,00000009,ffffffff
+# @                4555 add,000000c8,ffffffe0
+# @                4555 add,000000c8,fffffff4
+# @                4565 add,000000bc,fffffff4
+# @                4565 add,00000000,0000001a
+# @                4565 add,00000000,0000000a
+# @                4575 add,0000000a,0000000a
+# @                4575 add,0000000a,00000000
+# @                4585 add,0000000a,xxxxxxxx
+# @                4585 add,0000000a,ffffffff
+# @                4595 add,00000009,ffffffff
+# @                4595 add,000000c8,ffffffe0
+# @                4595 add,000000c8,fffffff4
+# @                4605 add,000000bc,fffffff4
+# @                4605 add,00000000,0000001a
+# @                4605 add,00000000,0000000a
+# @                4615 add,0000000a,0000000a
+# @                4615 add,0000000a,00000000
+# @                4625 add,0000000a,xxxxxxxx
+# @                4625 add,0000000a,ffffffff
+# @                4635 add,00000009,ffffffff
+# @                4635 add,000000c8,ffffffe0
+# @                4635 add,000000c8,fffffff4
+# @                4645 add,000000bc,fffffff4
+# @                4645 add,00000000,0000001a
+# @                4645 add,00000000,0000000a
+# @                4655 add,0000000a,0000000a
+# @                4655 add,0000000a,00000000
+# @                4665 add,0000000a,xxxxxxxx
+# @                4665 add,0000000a,ffffffff
+# @                4675 add,00000009,ffffffff
+# @                4675 add,000000c8,ffffffe0
+# @                4675 add,000000c8,fffffff4
+# @                4685 add,000000bc,fffffff4
+# @                4685 add,00000000,0000001a
+# @                4685 add,00000000,0000000a
+# @                4695 add,0000000a,0000000a
+# @                4695 add,0000000a,00000000
+# @                4705 add,0000000a,xxxxxxxx
+# @                4705 add,0000000a,ffffffff
+# @                4715 add,00000009,ffffffff
+# @                4715 add,000000c8,ffffffe0
+# @                4715 add,000000c8,fffffff4
+# @                4725 add,000000bc,fffffff4
+# @                4725 add,00000000,0000001a
+# @                4725 add,00000000,0000000a
+# @                4735 add,0000000a,0000000a
+# @                4735 add,0000000a,00000000
+# @                4745 add,0000000a,xxxxxxxx
+# @                4745 add,0000000a,ffffffff
+# @                4755 add,00000009,ffffffff
+# @                4755 add,000000c8,ffffffe0
+# @                4755 add,000000c8,fffffff4
+# @                4765 add,000000bc,fffffff4
+# @                4765 add,00000000,0000001a
+# @                4765 add,00000000,0000000a
+# @                4775 add,0000000a,0000000a
+# @                4775 add,0000000a,00000000
+# @                4785 add,0000000a,xxxxxxxx
+# @                4785 add,0000000a,ffffffff
+# @                4795 add,00000009,ffffffff
+# @                4795 add,000000c8,ffffffe0
+# @                4795 add,000000c8,fffffff4
+run
+# @                4805 add,000000bc,fffffff4
+# @                4805 add,00000000,0000001a
+# @                4805 add,00000000,0000000a
+# @                4815 add,0000000a,0000000a
+# @                4815 add,0000000a,00000000
+# @                4825 add,0000000a,xxxxxxxx
+# @                4825 add,0000000a,ffffffff
+# @                4835 add,00000009,ffffffff
+# @                4835 add,000000c8,ffffffe0
+# @                4835 add,000000c8,fffffff4
+# @                4845 add,000000bc,fffffff4
+# @                4845 add,00000000,0000001a
+# @                4845 add,00000000,0000000a
+# @                4855 add,0000000a,0000000a
+# @                4855 add,0000000a,00000000
+# @                4865 add,0000000a,xxxxxxxx
+# @                4865 add,0000000a,ffffffff
+# @                4875 add,00000009,ffffffff
+# @                4875 add,000000c8,ffffffe0
+# @                4875 add,000000c8,fffffff4
+# @                4885 add,000000bc,fffffff4
+# @                4885 add,00000000,0000001a
+# @                4885 add,00000000,0000000a
+# @                4895 add,0000000a,0000000a
+# @                4895 add,0000000a,00000000
+# @                4905 add,0000000a,xxxxxxxx
+# @                4905 add,0000000a,ffffffff
+# @                4915 add,00000009,ffffffff
+# @                4915 add,000000c8,ffffffe0
+# @                4915 add,000000c8,fffffff4
+# @                4925 add,000000bc,fffffff4
+# @                4925 add,00000000,0000001a
+# @                4925 add,00000000,0000000a
+# @                4935 add,0000000a,0000000a
+# @                4935 add,0000000a,00000000
+# @                4945 add,0000000a,xxxxxxxx
+# @                4945 add,0000000a,ffffffff
+# @                4955 add,00000009,ffffffff
+# @                4955 add,000000c8,ffffffe0
+# @                4955 add,000000c8,fffffff4
+# @                4965 add,000000bc,fffffff4
+# @                4965 add,00000000,0000001a
+# @                4965 add,00000000,0000000a
+# @                4975 add,0000000a,0000000a
+# @                4975 add,0000000a,00000000
+# @                4985 add,0000000a,xxxxxxxx
+# @                4985 add,0000000a,ffffffff
+# @                4995 add,00000009,ffffffff
+# @                4995 add,000000c8,ffffffe0
+# @                4995 add,000000c8,fffffff4
+# @                5005 add,000000bc,fffffff4
+# @                5005 add,00000000,0000001a
+# @                5005 add,00000000,0000000a
+# @                5015 add,0000000a,0000000a
+# @                5015 add,0000000a,00000000
+# @                5025 add,0000000a,xxxxxxxx
+# @                5025 add,0000000a,ffffffff
+# @                5035 add,00000009,ffffffff
+# @                5035 add,000000c8,ffffffe0
+# @                5035 add,000000c8,fffffff4
+# @                5045 add,000000bc,fffffff4
+# @                5045 add,00000000,0000001a
+# @                5045 add,00000000,0000000a
+# @                5055 add,0000000a,0000000a
+# @                5055 add,0000000a,00000000
+# @                5065 add,0000000a,xxxxxxxx
+# @                5065 add,0000000a,ffffffff
+# @                5075 add,00000009,ffffffff
+# @                5075 add,000000c8,ffffffe0
+# @                5075 add,000000c8,fffffff4
+# @                5085 add,000000bc,fffffff4
+# @                5085 add,00000000,0000001a
+# @                5085 add,00000000,0000000a
+# @                5095 add,0000000a,0000000a
+# @                5095 add,0000000a,00000000
+# @                5105 add,0000000a,xxxxxxxx
+# @                5105 add,0000000a,ffffffff
+# @                5115 add,00000009,ffffffff
+# @                5115 add,000000c8,ffffffe0
+# @                5115 add,000000c8,fffffff4
+# @                5125 add,000000bc,fffffff4
+# @                5125 add,00000000,0000001a
+# @                5125 add,00000000,0000000a
+# @                5135 add,0000000a,0000000a
+# @                5135 add,0000000a,00000000
+# @                5145 add,0000000a,xxxxxxxx
+# @                5145 add,0000000a,ffffffff
+# @                5155 add,00000009,ffffffff
+# @                5155 add,000000c8,ffffffe0
+# @                5155 add,000000c8,fffffff4
+# @                5165 add,000000bc,fffffff4
+# @                5165 add,00000000,0000001a
+# @                5165 add,00000000,0000000a
+# @                5175 add,0000000a,0000000a
+# @                5175 add,0000000a,00000000
+# @                5185 add,0000000a,xxxxxxxx
+# @                5185 add,0000000a,ffffffff
+# @                5195 add,00000009,ffffffff
+# @                5195 add,000000c8,ffffffe0
+# @                5195 add,000000c8,fffffff4
+restart -f
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(64): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/instruction_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3017) /home/asim/Desktop/github_repo/RISCV/Top_module.v(141): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/alu_instance File: /home/asim/Desktop/github_repo/RISCV/alu.v
+# ** Warning: (vsim-3722) /home/asim/Desktop/github_repo/RISCV/Top_module.v(141): [TFMPC] - Missing connection for port 'a_is_zero'.
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(152): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/data_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# @                   0 ALU case not defined
+# @                   0 add,00000000,00000001
+# @                   5 add,00000000,00000002
+# @                  15 add,00000000,00000003
+# @                  25 add,00000000,00000004
+# @                  35 add,00000000,00000005
+# @                  45 add,00000000,00000006
+# @                  55 add,00000000,00000007
+# @                  65 add,00000000,00000008
+# @                  75 add,00000000,00000009
+# @                  85 add,00000002,00000009
+# @                  85 add,00000002,00000003
+# @                 265 add,0000006c,00000001
+# @                 265 add,0000006c,0000000c
+# @                 275 add,00000078,0000000c
+# @                 275 add,00000078,00000004
+# @                 285 add,0000007c,00000004
+# @                 295 add,00000080,00000004
+# @                 305 add,00000084,00000004
+# @                 315 add,00000088,00000004
+# @                 325 add,0000008c,00000004
+# @                 325 add,00000000,00000814
+# @                 325 add,00000000,00000000
+# @                 375 add,00000000,00000001
+# @                 375 add,00000000,00000000
+# @                 385 add,00000000,00000004
+# @                 395 add,00000000,00000008
+run
+# @                 405 add,00000004,00000008
+# @                 405,LUI
+# @                 405,LUI
+run
+run
+# @                 415,AUIPC
+# @                 415,AUIPC
+# @                 415 add,000000b0,00123000
+run
+run
+# @                 425 add,000000b4,00123000
+# @                 425 add,00000000,00000000
+run
+run
+run
+run
+# @                 445 add,00000000,xxxxxxxx
+# @                 445 add,00000000,0000000a
+run
+run
+# @                 455 add,0000000a,0000000a
+# @                 455 add,0000000a,00000000
+run
+run
+# @                 465 add,0000000a,xxxxxxxx
+# @                 465 add,0000000a,ffffffff
+run
+run
+# @                 475 add,00000009,ffffffff
+# @                 475 add,000000c8,ffffffe0
+# @                 475 add,000000c8,fffffff4
+run
+run
+# @                 485 add,000000bc,fffffff4
+# @                 485 add,00000000,0000001a
+# @                 485 add,00000000,0000000a
+run
+run
+# @                 495 add,0000000a,0000000a
+# @                 495 add,0000000a,00000000
+run
+run
+# @                 505 add,0000000a,xxxxxxxx
+# @                 505 add,0000000a,ffffffff
+run
+run
+# @                 515 add,00000009,ffffffff
+# @                 515 add,000000c8,ffffffe0
+# @                 515 add,000000c8,fffffff4
+run
+run
+# @                 525 add,000000bc,fffffff4
+# @                 525 add,00000000,0000001a
+# @                 525 add,00000000,0000000a
+run
+run
+# @                 535 add,0000000a,0000000a
+# @                 535 add,0000000a,00000000
+run
+run
+# @                 545 add,0000000a,xxxxxxxx
+# @                 545 add,0000000a,ffffffff
+run
+run
+# @                 555 add,00000009,ffffffff
+# @                 555 add,000000c8,ffffffe0
+# @                 555 add,000000c8,fffffff4
+run
+run
+# @                 565 add,000000bc,fffffff4
+# @                 565 add,00000000,0000001a
+# @                 565 add,00000000,0000000a
+run
+run
+# @                 575 add,0000000a,0000000a
+# @                 575 add,0000000a,00000000
+run
+run
+# @                 585 add,0000000a,xxxxxxxx
+# @                 585 add,0000000a,ffffffff
+run
+run
+# @                 595 add,00000009,ffffffff
+# @                 595 add,000000c8,ffffffe0
+# @                 595 add,000000c8,fffffff4
+run
+run
+# @                 605 add,000000bc,fffffff4
+# @                 605 add,00000000,0000001a
+# @                 605 add,00000000,0000000a
+run
+run
+# @                 615 add,0000000a,0000000a
+# @                 615 add,0000000a,00000000
+run
+run
+# @                 625 add,0000000a,xxxxxxxx
+# @                 625 add,0000000a,ffffffff
+run
+run
+# @                 635 add,00000009,ffffffff
+# @                 635 add,000000c8,ffffffe0
+# @                 635 add,000000c8,fffffff4
+run
+# Compile of memory.v was successful.
+# Compile of alu.v was successful.
+# Compile of controller.v was successful.
+# Compile of memory_byte.v was successful.
+# Compile of mux_2_1.v was successful.
+# Compile of register.v was successful.
+# Compile of Top_module.v was successful.
+# Compile of tb_top_module.v was successful.
+# Compile of register_file.v was successful.
+# Compile of Imm_Gen.v was successful.
+# Compile of memory_load.v was successful.
+# Compile of branch_comparator.v was successful.
+# Compile of mux_4_1.v was successful.
+# 13 compiles, 0 failed with no errors.
+restart -f
+# Loading work.tb_top_module
+# Loading work.Top_module
+# Loading work.multiplexor
+# Loading work.register
+# Loading work.memory_byte
+# Loading work.register_file
+# Loading work.Imm_Gen
+# Loading work.branch_compare
+# Loading work.alu
+# Loading work.memory_load
+# Loading work.multiplexor_4
+# Loading work.controller
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(64): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/instruction_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3017) /home/asim/Desktop/github_repo/RISCV/Top_module.v(141): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/alu_instance File: /home/asim/Desktop/github_repo/RISCV/alu.v
+# ** Warning: (vsim-3722) /home/asim/Desktop/github_repo/RISCV/Top_module.v(141): [TFMPC] - Missing connection for port 'a_is_zero'.
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(152): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/data_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# @                   0 ALU case not defined
+# @                   0 add,00000000,00000001
+# @                   5 add,00000000,00000002
+# @                  15 add,00000000,00000003
+# @                  25 add,00000000,00000004
+# @                  35 add,00000000,00000005
+# @                  45 add,00000000,00000006
+# @                  55 add,00000000,00000007
+# @                  65 add,00000000,00000008
+# @                  75 add,00000000,00000009
+# @                  85 add,00000002,00000009
+# @                  85 add,00000002,00000003
+# @                 265 add,0000006c,00000001
+# @                 265 add,0000006c,0000000c
+# @                 275 add,00000078,0000000c
+# @                 275 add,00000078,00000004
+# @                 285 add,0000007c,00000004
+# @                 295 add,00000080,00000004
+# @                 305 add,00000084,00000004
+# @                 315 add,00000088,00000004
+# @                 325 add,0000008c,00000004
+# @                 325 add,00000000,00000814
+# @                 325 add,00000000,00000000
+# @                 375 add,00000000,00000001
+# @                 375 add,00000000,00000000
+# @                 385 add,00000000,00000004
+# @                 395 add,00000000,00000008
+run
+# @                 405 add,00000004,00000008
+# @                 405,LUI
+# @                 405,LUI
+# @                 415,AUIPC
+# @                 415,AUIPC
+# @                 415 add,000000b0,00123000
+# @                 425 add,000000b4,00123000
+# @                 425 add,00000000,00000000
+# @                 445 add,00000000,xxxxxxxx
+# @                 445 add,00000000,0000000a
+# @                 455 add,0000000a,0000000a
+# @                 455 add,0000000a,00000000
+# @                 465 add,0000000a,xxxxxxxx
+# @                 465 add,0000000a,ffffffff
+# @                 475 add,00000009,ffffffff
+# @                 475 add,000000c8,ffffffe0
+# @                 475 add,000000c8,fffffff8
+# @                 485 add,000000c0,fffffff8
+# @                 485 add,00000009,00000000
+# @                 495 add,00000009,xxxxxxxx
+# @                 495 add,00000009,fffff7fa
+# @                 495 add,00000009,ffffffff
+# @                 505 add,00000008,ffffffff
+# @                 505 add,000000c8,ffffffe0
+# @                 505 add,000000c8,fffffff8
+# @                 515 add,000000c0,fffffff8
+# @                 515 add,00000008,00000000
+# @                 525 add,00000008,xxxxxxxx
+# @                 525 add,00000008,fffff7fa
+# @                 525 add,00000008,ffffffff
+# @                 535 add,00000007,ffffffff
+# @                 535 add,000000c8,ffffffe0
+# @                 535 add,000000c8,fffffff8
+# @                 545 add,000000c0,fffffff8
+# @                 545 add,00000007,00000000
+# @                 555 add,00000007,xxxxxxxx
+# @                 555 add,00000007,fffff7fa
+# @                 555 add,00000007,ffffffff
+# @                 565 add,00000006,ffffffff
+# @                 565 add,000000c8,ffffffe0
+# @                 565 add,000000c8,fffffff8
+# @                 575 add,000000c0,fffffff8
+# @                 575 add,00000006,00000000
+# @                 585 add,00000006,xxxxxxxx
+# @                 585 add,00000006,fffff7fa
+# @                 585 add,00000006,ffffffff
+# @                 595 add,00000005,ffffffff
+# @                 595 add,000000c8,ffffffe0
+# @                 595 add,000000c8,fffffff8
+# @                 605 add,000000c0,fffffff8
+# @                 605 add,00000005,00000000
+# @                 615 add,00000005,xxxxxxxx
+# @                 615 add,00000005,fffff7fa
+# @                 615 add,00000005,ffffffff
+# @                 625 add,00000004,ffffffff
+# @                 625 add,000000c8,ffffffe0
+# @                 625 add,000000c8,fffffff8
+# @                 635 add,000000c0,fffffff8
+# @                 635 add,00000004,00000000
+# @                 645 add,00000004,xxxxxxxx
+# @                 645 add,00000004,fffff7fa
+# @                 645 add,00000004,ffffffff
+# @                 655 add,00000003,ffffffff
+# @                 655 add,000000c8,ffffffe0
+# @                 655 add,000000c8,fffffff8
+# @                 665 add,000000c0,fffffff8
+# @                 665 add,00000003,00000000
+# @                 675 add,00000003,xxxxxxxx
+# @                 675 add,00000003,fffff7fa
+# @                 675 add,00000003,ffffffff
+# @                 685 add,00000002,ffffffff
+# @                 685 add,000000c8,ffffffe0
+# @                 685 add,000000c8,fffffff8
+# @                 695 add,000000c0,fffffff8
+# @                 695 add,00000002,00000000
+# @                 705 add,00000002,xxxxxxxx
+# @                 705 add,00000002,fffff7fa
+# @                 705 add,00000002,ffffffff
+# @                 715 add,00000001,ffffffff
+# @                 715 add,000000c8,ffffffe0
+# @                 715 add,000000c8,fffffff8
+# @                 725 add,000000c0,fffffff8
+# @                 725 add,00000001,00000000
+# @                 735 add,00000001,xxxxxxxx
+# @                 735 add,00000001,fffff7fa
+# @                 735 add,00000001,ffffffff
+# @                 745 add,00000000,ffffffff
+# @                 745 add,000000c8,ffffffe0
+# @                 745 add,000000c8,fffffff8
+# @                 755 add,000000cc,fffffff8
+# @                 755 add,00000000,00000000
+# @                 785 add,xxxxxxxx,00000000
+# Unkonwn Instruction
+# @                 785 add,xxxxxxxx,xxxxxxxx
+# Unkonwn Instruction
+# Compile of memory.v was successful.
+# Compile of alu.v was successful.
+# Compile of controller.v was successful.
+# Compile of memory_byte.v was successful.
+# Compile of mux_2_1.v was successful.
+# Compile of register.v was successful.
+# Compile of Top_module.v was successful.
+# Compile of tb_top_module.v was successful.
+# Compile of register_file.v was successful.
+# Compile of Imm_Gen.v was successful.
+# Compile of memory_load.v was successful.
+# Compile of branch_comparator.v was successful.
+# Compile of mux_4_1.v was successful.
+# 13 compiles, 0 failed with no errors.
+restart -f
+# Loading work.tb_top_module
+# Loading work.Top_module
+# Loading work.multiplexor
+# Loading work.register
+# Loading work.memory_byte
+# Loading work.register_file
+# Loading work.Imm_Gen
+# Loading work.branch_compare
+# Loading work.alu
+# Loading work.memory_load
+# Loading work.multiplexor_4
+# Loading work.controller
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(64): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/instruction_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+# ** Warning: (vsim-3017) /home/asim/Desktop/github_repo/RISCV/Top_module.v(141): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/alu_instance File: /home/asim/Desktop/github_repo/RISCV/alu.v
+# ** Warning: (vsim-3722) /home/asim/Desktop/github_repo/RISCV/Top_module.v(141): [TFMPC] - Missing connection for port 'a_is_zero'.
+# ** Warning: (vsim-3015) /home/asim/Desktop/github_repo/RISCV/Top_module.v(152): [PCDPC] - Port size (10) does not match connection size (32) for port 'addr'. The port definition is at: /home/asim/Desktop/github_repo/RISCV/memory_byte.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_module/instance1/data_memory File: /home/asim/Desktop/github_repo/RISCV/memory_byte.v
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# @                   0 ALU case not defined
+# @                   0 add,00000000,00000001
+# @                   5 add,00000000,00000002
+# @                  15 add,00000000,00000003
+# @                  25 add,00000000,00000004
+# @                  35 add,00000000,00000005
+# @                  45 add,00000000,00000006
+# @                  55 add,00000000,00000007
+# @                  65 add,00000000,00000008
+# @                  75 add,00000000,00000009
+# @                  85 add,00000002,00000009
+# @                  85 add,00000002,00000003
+# @                 265 add,0000006c,00000001
+# @                 265 add,0000006c,0000000c
+# @                 275 add,00000078,0000000c
+# @                 275 add,00000078,00000004
+# @                 285 add,0000007c,00000004
+# @                 295 add,00000080,00000004
+# @                 305 add,00000084,00000004
+# @                 315 add,00000088,00000004
+# @                 325 add,0000008c,00000004
+# @                 325 add,00000000,00000814
+# @                 325 add,00000000,00000000
+# @                 375 add,00000000,00000001
+# @                 375 add,00000000,00000000
+# @                 385 add,00000000,00000004
+# @                 395 add,00000000,00000008
+run
+# @                 405 add,00000004,00000008
+# @                 405,LUI
+# @                 405,LUI
+run
+# @                 415,AUIPC
+# @                 415,AUIPC
+# @                 415 add,000000b0,00123000
+run
+# @                 425 add,000000b4,00123000
+# @                 425 add,00000000,00000000
+run
+run
+# @                 445 add,00000000,xxxxxxxx
+# @                 445 add,00000000,0000000a
+run
+# @                 455 add,0000000a,0000000a
+# @                 455 add,0000000a,00000000
+run
+# @                 465 add,0000000a,xxxxxxxx
+# @                 465 add,0000000a,ffffffff
+run
+# @                 475 add,00000009,ffffffff
+# @                 475 add,000000c8,ffffffe0
+# @                 475 add,000000c8,fffffff8
+run
+# @                 485 add,000000c0,fffffff8
+# @                 485 add,00000009,0000000a
+run
+# @                 495 add,00000009,xxxxxxxx
+# @                 495 add,00000009,fffff7fa
+# @                 495 add,00000009,ffffffff
+run
+# @                 505 add,00000008,ffffffff
+# @                 505 add,000000c8,ffffffe0
+# @                 505 add,000000c8,fffffff8
+run
+# @                 515 add,000000c0,fffffff8
+# @                 515 add,00000008,00000013
+run
+# @                 525 add,00000008,xxxxxxxx
+# @                 525 add,00000008,fffff7fa
+# @                 525 add,00000008,ffffffff
+run
+# @                 535 add,00000007,ffffffff
+# @                 535 add,000000c8,ffffffe0
+# @                 535 add,000000c8,fffffff8
+run
+# @                 545 add,000000c0,fffffff8
+# @                 545 add,00000007,0000001b
+run
+# @                 555 add,00000007,xxxxxxxx
+# @                 555 add,00000007,fffff7fa
+# @                 555 add,00000007,ffffffff
+run
+# @                 565 add,00000006,ffffffff
+# @                 565 add,000000c8,ffffffe0
+# @                 565 add,000000c8,fffffff8
+run
+# @                 575 add,000000c0,fffffff8
+# @                 575 add,00000006,00000022
+run
+# @                 585 add,00000006,xxxxxxxx
+# @                 585 add,00000006,fffff7fa
+# @                 585 add,00000006,ffffffff
+run
+# @                 595 add,00000005,ffffffff
+# @                 595 add,000000c8,ffffffe0
+# @                 595 add,000000c8,fffffff8
+run
+# @                 605 add,000000c0,fffffff8
+# @                 605 add,00000005,00000028
+run
+# @                 615 add,00000005,xxxxxxxx
+# @                 615 add,00000005,fffff7fa
+# @                 615 add,00000005,ffffffff
+run
+# @                 625 add,00000004,ffffffff
+# @                 625 add,000000c8,ffffffe0
+# @                 625 add,000000c8,fffffff8
+run
+# @                 635 add,000000c0,fffffff8
+# @                 635 add,00000004,0000002d
+run
+# @                 645 add,00000004,xxxxxxxx
+# @                 645 add,00000004,fffff7fa
+# @                 645 add,00000004,ffffffff
+run
+# @                 655 add,00000003,ffffffff
+# @                 655 add,000000c8,ffffffe0
+# @                 655 add,000000c8,fffffff8
+run
+# @                 665 add,000000c0,fffffff8
+# @                 665 add,00000003,00000031
+run
+# @                 675 add,00000003,xxxxxxxx
+# @                 675 add,00000003,fffff7fa
+# @                 675 add,00000003,ffffffff
+run
+# @                 685 add,00000002,ffffffff
+# @                 685 add,000000c8,ffffffe0
+# @                 685 add,000000c8,fffffff8
+run
+# @                 695 add,000000c0,fffffff8
+# @                 695 add,00000002,00000034
+run
+# @                 705 add,00000002,xxxxxxxx
+# @                 705 add,00000002,fffff7fa
+# @                 705 add,00000002,ffffffff
+run
+# @                 715 add,00000001,ffffffff
+# @                 715 add,000000c8,ffffffe0
+# @                 715 add,000000c8,fffffff8
+run
+# @                 725 add,000000c0,fffffff8
+# @                 725 add,00000001,00000036
+run
+# @                 735 add,00000001,xxxxxxxx
+# @                 735 add,00000001,fffff7fa
+# @                 735 add,00000001,ffffffff
+run
+# @                 745 add,00000000,ffffffff
+# @                 745 add,000000c8,ffffffe0
+# @                 745 add,000000c8,fffffff8
+run
+# @                 755 add,000000cc,fffffff8
+# @                 755 add,00000000,00000000
+run

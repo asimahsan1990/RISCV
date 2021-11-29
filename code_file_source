@@ -7,3 +7,45 @@
 	18:		00700393		addi x7 x0 7
 	1c:		00800413		addi x8 x0 8
 	20:		00900493		addi x9 x0 9
+	24:		00310633		add x12 x2 x3
+	28:		403106b3		sub x13 x2 x3
+	2c:		00221733		sll x14 x4 x2
+	30:		0042a7b3		slt x15 x5 x4
+	34:		0042b833		sltu x16 x5 x4
+	38:		0063c8b3		xor x17 x7 x6
+	3c:		0013d933		srl x18 x7 x1
+	40:		4013d9b3		sra x19 x7 x1
+	44:		0063ea33		or x20 x7 x6
+	48:		0063fab3		and x21 x7 x6
+	4c:		00221713		slli x14 x4 2
+	50:		0042a793		slti x15 x5 4
+	54:		ffc2b813		sltiu x16 x5 -4
+	58:		0063c893		xori x17 x7 6
+	5c:		0013d913		srli x18 x7 1
+	60:		4013d993		srai x19 x7 1
+	64:		0063ea13		ori x20 x7 6
+	68:		0063fa93		andi x21 x7 6
+	6c:		00108663		beq x1 x1 12
+	70:		00000013		addi x0 x0 0
+	74:		00000013		addi x0 x0 0
+	78:		00209263		bne x1 x2 4
+	7c:		0020c263		blt x1 x2 4
+	80:		0020d263		bge x1 x2 4
+	84:		0020e263		bltu x1 x2 4
+	88:		0020f263		bgeu x1 x2 4
+	8c:		00000a83		lb x21 0 x0
+	90:		00001b03		lh x22 0 x0
+	94:		00002b83		lw x23 0 x0
+	98:		00004c03		lbu x24 0 x0
+	9c:		00005c83		lhu x25 0 x0
+	a0:		00100023		sb x1 0 x0
+	a4:		00201223		sh x2 4 x0
+	a8:		00302423		sw x3 8 x0
+	ac:		00000013		addi x0 x0 0
+	b0:		00000013		addi x0 x0 0
+	b4:		00000013		addi x0 x0 0
+	b8:		00000db3		add x27 x0 x0
+	bc:		00a00d13		addi x26 x0 10
+	c0:		01bd0db3		add x27 x26 x27
+	c4:		fffd0d13		addi x26 x26 -1
+	c8:		fe0d1ce3		bne x26 x0 -8
