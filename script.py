@@ -1,6 +1,6 @@
 import re
 
-f = open("code_file_source", "r")
+f = open("code_file_source_Set_1", "r")
 wirte_file=open("hex_file_write.hex","w")
 for line in f:
     a=line
