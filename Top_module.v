@@ -131,12 +131,13 @@ module Top_module(input clk,
 wire[width-1:0] Oprand_A;
 wire[width-1:0] Oprand_B;
 wire[width-1:0] WB;
+wire[width-1:0] D_Scr_MM;
 
 
 always @(posedge clk) begin
       rs1_X<=Oprand_A;
       rs2_X<=Oprand_B;
-      rs2_M<=rs2_X;
+      rs2_M<=D_Scr_MM;
 end
 
 wire [width-1:0] t_instr_D;
@@ -201,6 +202,7 @@ wire ASel;
 
 wire [1:0] FSEL_A;
 wire [1:0] FSEL_B;
+wire [1:0]FSEL_MEM;
 
     multiplexor
   #(
@@ -229,6 +231,7 @@ wire [1:0] FSEL_B;
 
 wire[width-1:0] Source_B;
 wire[width-1:0] D_Scr_B;
+
     multiplexor
   #(
     .WIDTH   ( width  ) 
@@ -256,6 +259,24 @@ wire[width-1:0] D_Scr_B;
    ) ;
 
 
+          multiplexor_4
+  #(
+    .WIDTH   ( width  ) 
+   )
+    forward_source_mm_mux
+   (
+    .sel     (  FSEL_MEM ),
+    .in0     ( D_Scr_B ),
+    .in1     ( ALU_M ),
+    .in2     ( WB ),
+    .in3     ( D_Scr_B ),//NC // output
+    .mux_out ( D_Scr_MM ) 
+   ) ;
+
+
+   
+
+
    forward_unit  fw_control( 
     .instr_X(instr_X) ,
     .instr_M(instr_M),
@@ -263,7 +284,8 @@ wire[width-1:0] D_Scr_B;
     .RegWEn_M(RegWEn_M),
     .RegWEn_W(RegWEn_W),
     .FSEL_A(FSEL_A),
-    .FSEL_B(FSEL_B)
+    .FSEL_B(FSEL_B),
+    .FSEL_MEM(FSEL_MEM)
 
 );
 

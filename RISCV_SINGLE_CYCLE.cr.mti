@@ -75,12 +75,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	memory
 
-} {} {}} /home/asim/Desktop/github_repo/RISCV/forward_unit.v {1 {vlog -work work -stats=none /home/asim/Desktop/github_repo/RISCV/forward_unit.v
+} {} {}} /home/asim/Desktop/github_repo/RISCV/branch_comparator.v {1 {vlog -work work -stats=none /home/asim/Desktop/github_repo/RISCV/branch_comparator.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module forward_unit
+-- Compiling module branch_compare
 
 Top level modules:
-	forward_unit
+	branch_compare
 
 } {} {}} /home/asim/Desktop/github_repo/RISCV/register.v {1 {vlog -work work -stats=none /home/asim/Desktop/github_repo/RISCV/register.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -88,12 +88,5 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	register
-
-} {} {}} /home/asim/Desktop/github_repo/RISCV/branch_comparator.v {1 {vlog -work work -stats=none /home/asim/Desktop/github_repo/RISCV/branch_comparator.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module branch_compare
-
-Top level modules:
-	branch_compare
 
 } {} {}}

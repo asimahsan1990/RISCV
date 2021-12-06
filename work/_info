@@ -51,7 +51,7 @@ R4
 R5
 R6
 vcontroller
-R0
+!s110 1638784092
 !i10b 1
 !s100 C6z1aUHJVFDJ>VDX3`]A[3
 I6;XeZO;o9lJ?>5Tc?9cWS1
@@ -65,20 +65,20 @@ R3
 r1
 !s85 0
 31
-R4
+!s108 1638784092.000000
 !s107 /home/asim/Desktop/github_repo/RISCV/controller.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/asim/Desktop/github_repo/RISCV/controller.v|
 !i113 1
 R5
 R6
 vforward_unit
-R0
+!s110 1638784123
 !i10b 1
-!s100 4b5^GbTC=2@AY?`>o<P521
-IO^:S7E`cMjRRKSG_[^Z`J3
+!s100 VSWlfAAIA8dbDcf<mHGk]2
+IZ6c06U9aJBbmNV93l_WcM0
 R1
 R2
-w1638449974
+w1638784075
 8/home/asim/Desktop/github_repo/RISCV/forward_unit.v
 F/home/asim/Desktop/github_repo/RISCV/forward_unit.v
 L0 1
@@ -86,7 +86,7 @@ R3
 r1
 !s85 0
 31
-R4
+!s108 1638784123.000000
 !s107 /home/asim/Desktop/github_repo/RISCV/forward_unit.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/asim/Desktop/github_repo/RISCV/forward_unit.v|
 !i113 1
@@ -326,13 +326,13 @@ R4
 R5
 R6
 vTop_module
-R0
+!s110 1638784029
 !i10b 1
-!s100 i7]2bmDdXz<_hiUlST_;O3
-IALob`[U0IYn3W78`=0Nkj3
+!s100 ULZfo9h=CkMF@Rn_E4`f<1
+I=[mknc3kKPN``Z7`nK=BR1
 R1
 R2
-w1638453522
+w1638784014
 8/home/asim/Desktop/github_repo/RISCV/Top_module.v
 F/home/asim/Desktop/github_repo/RISCV/Top_module.v
 L0 1
@@ -340,7 +340,7 @@ R3
 r1
 !s85 0
 31
-R4
+!s108 1638784029.000000
 !s107 /home/asim/Desktop/github_repo/RISCV/Top_module.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/asim/Desktop/github_repo/RISCV/Top_module.v|
 !i113 1
